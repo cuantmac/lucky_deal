@@ -1,0 +1,17 @@
+{
+    "bundles": [{
+        "version": 227,
+        "min_app_version": 41,
+        "max_app_version": 42,
+        "name": "bundle-android-556.zip",
+        "md5": "3e90150fc9bfedda1487b016faf9755e",
+        "percent": 100
+    }],
+    "iosBundles": [{
+        "version": 187,
+        "min_app_version": 6,
+        "max_app_version": 7,
+        "name": "bundle-ios-514.zip",
+        "md5": "223712789dc4969d119bf5140f303758"
+    }]
+}

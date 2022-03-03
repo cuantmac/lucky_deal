@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PointBottomView">
+        <!-- 被选中圆点的颜色 -->
+        <attr name="fillColor" format="color" />
+        <!-- 未选中圆点的颜色 -->
+        <attr name="strokeColor" format="color" />
+        <!-- 圆点的大小 -->
+        <attr name="radius" format="dimension" />
+        <!-- 圆点间间距的大小 -->
+        <attr name="circleInterval" format="dimension" />
+    </declare-styleable>
+    <!-- 默认主题颜色 -->
+    <attr name="ykf_theme_color_default" format="color" /><!-- 主色调 -->
+    <attr name="ykf_theme_color_default_light_1" format="color" />
+
+    <attr name="ykf_theme_color_bg_default" format="color" /><!-- 默认背景 主色调 -->
+    <attr name="ykf_theme_text_color_default" format="color" /><!--大部分文字 主色调 -->
+    <attr name="ykf_theme_text_dark_default" format="color" />
+
+    <attr name="ykf_theme_chat_activity_default" format="color" /><!--聊天页面的主色默认白-->
+    <attr name="ykf_theme_chat_activity_bg_default" format="color" /><!--聊天页面的背景色默认 浅灰-->
+
+    <declare-styleable name="CircleProgress">
+        <attr name="circleProgress" format="integer"/> <!-- 进度0-100 -->
+        <attr name="startAngle" format="integer"/> <!-- 开始的角度0-360 -->
+        <attr name="circleCorner" format="dimension" /> <!-- 圆角 -->
+        <attr name="backgroundColor" format="color"/> <!-- 背景的颜色 -->
+    </declare-styleable>
+
+
+
+</resources>

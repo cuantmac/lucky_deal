@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="fdsfds"
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:singleLine="true"
+        android:ellipsize="end"
+        ></TextView>
+    <View
+        android:layerType="software"
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/common_line_draw_dash"
+        />
+
+</LinearLayout>

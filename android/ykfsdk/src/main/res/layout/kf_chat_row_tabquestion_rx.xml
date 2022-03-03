@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/ykf_receive_msg_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_kf_tabquestion"
+            android:layout_width="130dp"
+            android:layout_height="40dp">
+        </ImageView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tb_question"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabMode="scrollable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicatorColor="@color/ykf_color_default"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/ykf_color_default"
+            app:tabTextColor="@color/color_333333"
+            app:tabTextAppearance="@style/TabText"
+            app:tabIndicatorFullWidth="false"
+            >
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+<!--            <com.m7.imkfsdk.view.EnhanceTabLayout-->
+<!--                android:id="@+id/tb_question"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="48dp"-->
+<!--                app:tabIndicatorHeight="3dp"-->
+<!--                app:tabIndicatorWidth="30dp"-->
+<!--                app:tabTextColor="@color/color_333333"-->
+<!--                app:tab_Mode="mode_scrollable"-->
+<!--                app:tabSelectTextColor="@color/ykf_color_default"-->
+<!--                app:tabIndicatorColor="@color/ykf_color_default"-->
+<!--                >-->
+<!--            </com.m7.imkfsdk.view.EnhanceTabLayout>-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/kf_hint_view"
+            android:layout_height="1dp">
+        </TextView>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_tabquestion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        </androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:visibility="gone"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/tv_seemore"
+            android:text="@string/ykf_lookmore"
+            android:textColor="@color/ykf_color_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用主题色 -->
+    <color name="ykf_color_default">#0081FF</color>
+    <color name="ykf_color_default_light_1">#ECF6FF</color>
+    <color name="ykf_color_bg_default">#ffffff</color>
+    <color name="ykf_theme_text_color_default">#ffffff</color>
+    <color name="ykf_theme_text_dark_default">#02071D</color>
+    <color name="ykf_chat_activity_default">#ffffff</color>
+    <color name="ykf_chat_activity_bg_default">#EDEDED</color>
+
+    <!-- 应用主题色1 -->
+    <color name="ykf_color_default_1">#dd4916</color>
+    <color name="ykf_color_default_1_light_1">#44dd4916</color>
+    <color name="ykf_color_bg_default_1">#ffffff</color>
+    <color name="ykf_theme_text_color_default_1">#ffffff</color>
+    <color name="ykf_theme_text_dark_default_1">#02071D</color>
+    <color name="ykf_chat_activity_default_1">#ffffff</color>
+    <color name="ykf_chat_activity_bg_default_1">#EDEDED</color>
+
+
+    <color name="ykf_light_gray">#cccccc</color>
+    <color name="ykf_no_helper">#FCF2ED</color>
+    <color name="ykf_chat_time">#666666</color>
+
+    <!-- 应用主题色 -->
+    <!--    <color name="ykf_color_default_blue">#0081FF</color>-->
+    <color name="ykf_color_default_blue_bg">#E4EDF6</color>
+    <color name="maincolor">#21b38a</color>
+    <color name="maincolordark">#129872</color>
+    <color name="sidebar_letter_normal">#202020</color>
+    <color name="sidebar_letter_pressed">#21b38a</color>
+    <!-- 白色 -->
+    <color name="all_white">#ffffff</color>
+    <!-- 黑色 -->
+    <color name="all_black">#151515</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_2684FF">#2684FF</color>
+    <color name="color_FF6B6B">#FF6B6B</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_878787">#878787</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_0D8BFF">#0D8BFF</color>
+    <color name="color_ededed">#ededed</color>
+    <color name="color_00C922">#00C922</color>
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_f0">#F0F0F0</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_e7">#e7e7e7</color>
+    <color name="color_6d">#6d6d6d</color>
+    <color name="color_3c3c3c">#3c3c3c</color>
+    <color name="bg_gray_B3B3B3">#B3B3B3</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 浅灰 -->
+    <color name="lightgrey">#D6D6D6</color>
+    <color name="grey">#999999</color>
+    <color name="parent_dialog_bg">#EDEDED</color>
+    <color name="startcolor">#21b38a</color>
+    <color name="textcolor">#383838</color>
+    <color name="color_151515">#151515</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="robot_blue">#2256CB</color>
+    <color name="chatlist_bg">#F5F5F5</color>
+    <color name="tv_red">#F75732</color>
+
+    <color name="kf_tag_select">#F39300</color>
+    <color name="kf_tag_unselect">#666666</color>
+    <color name="kf_hint_view">#FAFAFA</color>
+    <color name="kf_line">#D9D9D9</color>
+
+
+    <!--<color name="pointed">#2684FF</color>-->
+    <!--<color name="pointno">#D9D9D9</color>-->
+    <!--<color name="pointno">#D9D9D9</color>-->
+    <!--    <color name="pointed">#0C6BFE</color>-->
+    <color name="pointed">#0C6BFE</color>
+    <color name="ykf_point_no">#F5F6F7</color>
+
+    <color name="ykf_transparent">#00000000</color>
+
+    <color name="ykf_help_unyes">#0081FF</color>
+
+    <color name="ykf_help_unno">#F8624F</color>
+    <color name="unread">#459AE9</color>
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/ykf_theme_chat_activity_bg_default">
+    <!--titlebar-->
+    <RelativeLayout
+        android:id="@+id/chat_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/all_white">
+
+        <TextView
+            android:id="@+id/chat_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:width="40dp"
+            android:height="40dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/fh"
+            android:textColor="?attr/ykf_theme_color_default"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="14"
+            android:maxLines="1"
+            android:text="@string/wait_link"
+            android:textColor="@color/all_black"
+            android:textSize="16sp"
+            tools:text="容联七陌科技有限公司欢迎您使用在线客服" />
+
+        <TextView
+            android:id="@+id/chat_tv_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/topeople"
+            android:textColor="?attr/ykf_theme_color_default"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.effective.android.panel.view.PanelSwitchLayout
+        android:id="@+id/panel_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_title"
+        android:orientation="vertical"
+        app:animationSpeed="standard">
+
+        <!-- 内容区域 -->
+        <!-- edit_view 指定一个 EditText 用于输入 ，必须项-->
+        <!-- empty_view 指定用户点击该 ID 对应的 View 时实现面板或者输入法隐藏，非必须项 -->
+        <com.effective.android.panel.view.content.LinearContentContainer
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/ykf_theme_chat_activity_bg_default"
+            android:orientation="vertical"
+            app:edit_view="@id/chat_input">
+
+            <!--最下面输入的bar-->
+            <com.m7.imkfsdk.view.ChatListView
+                android:id="@+id/chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:dividerHeight="5dp"
+                android:listSelector="#00000000"
+                android:scrollbarStyle="outsideOverlay"
+                android:transcriptMode="normal" />
+
+            <LinearLayout
+                android:id="@+id/bar_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ededed"
+                    android:paddingTop="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_tag_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_hintView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/kf_hint_view"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="#F6F6F6"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <Button
+                        android:id="@+id/chat_set_mode_voice"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/kf_icon_chat_voice"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/chat_set_mode_keyboard"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/kf_chatting_setmode_keyboard_btn_normal"
+                        android:visibility="gone" />
+
+                    <com.m7.imkfsdk.recordbutton.AudioRecorderButton
+                        android:id="@+id/chat_press_to_speak"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/kf_chat_input_bg"
+                        android:gravity="center"
+                        android:minHeight="40dp"
+                        android:text="@string/recorder_normal"
+                        android:textColor="#151515"
+                        android:visibility="gone">
+
+
+                    </com.m7.imkfsdk.recordbutton.AudioRecorderButton>
+
+                    <RelativeLayout
+                        android:id="@+id/chat_edittext_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/kf_chat_input_bg"
+                        android:gravity="bottom">
+
+                        <EditText
+                            android:id="@+id/chat_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="42dp"
+                            android:background="@null"
+                            android:imeOptions="flagNoExtractUi"
+                            android:maxLines="4"
+                            android:textCursorDrawable="@drawable/bg_edittext"
+                            android:minHeight="40dp"
+                            android:paddingLeft="1dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="1dp"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/all_black"
+                            android:textSize="16sp" />
+
+
+                        <ImageView
+                            android:id="@+id/chat_emoji_normal"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/selector_emoji_focus" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/chat_more"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/selector_more_focus" />
+
+                    <Button
+                        android:id="@+id/chat_send"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/kf_icon_send"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.effective.android.panel.view.content.LinearContentContainer>
+        <!-- 面板区域，仅能包含PanelView-->
+        <com.effective.android.panel.view.panel.PanelContainer
+            android:id="@+id/panel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f6"
+            tools:layout_height="0dp"
+            tools:layout_weight="1">
+
+            <!-- 每一项面板 -->
+            <!-- panel_layout 用于指定面板该 ID 对应的布局 ，必须项-->
+            <!-- panel_trigger 用于用户点击该 ID 对应的 View 时切换到该面板 -->
+            <!-- panel_toggle  用于当该面板显示时 ，用户再次点击 panel_trigger 对应的 View 时是否回切输入法-->
+            <com.effective.android.panel.view.panel.PanelView
+                android:id="@+id/panel_emotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:panel_layout="@layout/panel_emotion_layout"
+                app:panel_trigger="@id/chat_emoji_normal" />
+
+            <com.effective.android.panel.view.panel.PanelView
+                android:id="@+id/panel_addition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:panel_layout="@layout/panel_add_layout"
+                app:panel_trigger="@id/chat_more" />
+
+        </com.effective.android.panel.view.panel.PanelContainer>
+
+    </com.effective.android.panel.view.PanelSwitchLayout>
+
+    <!--排队数-->
+    <LinearLayout
+        android:id="@+id/chat_queue_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/lightgrey"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/chat_queue_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

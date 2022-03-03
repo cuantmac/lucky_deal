@@ -1,0 +1,1905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1AAFB8D6124756801A5C4A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE2A1B4E36644AC69A0CD1B9 /* FontAwesome.ttf */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		14AD10942519CBFA000FCBF0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD10932519CBFA000FCBF0 /* ApiManager.swift */; };
+		14AF0F16247E8F50004F85AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF0F15247E8F50004F85AB /* AppDelegate.swift */; };
+		14AF1527247E91DE004F85AB /* LuckyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF1524247E91DE004F85AB /* LuckyUser.swift */; };
+		14AF1529247F5B85004F85AB /* InnoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF1528247F5B85004F85AB /* InnoCommon.framework */; };
+		14AF152B247F8CC2004F85AB /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF152A247F8CC2004F85AB /* AppInfo.swift */; };
+		14AF152D247F8CEF004F85AB /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF152C247F8CEF004F85AB /* NotificationManager.swift */; };
+		14AF1530247FB7FE004F85AB /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF152F247FB7FE004F85AB /* Report.swift */; };
+		14C8C389247BA49200A05112 /* AppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C8C388247BA49200A05112 /* AppModule.m */; };
+		14E7555D250A17D2004A9329 /* UpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7555C250A17D2004A9329 /* UpdateManager.swift */; };
+		14E7555F250B5470004A9329 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7555E250B5470004A9329 /* Constants.swift */; };
+		14E75561250F4E67004A9329 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E75560250F4E67004A9329 /* StoreKit.framework */; };
+		182974866F274B63A8D77FC5 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 366F3CBA1B224B3B8036C1EC /* SimpleLineIcons.ttf */; };
+		19B0B5DA250A056700076D38 /* LuckyDeal.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 1480F84E2508DD0B007F9DC4 /* LuckyDeal.entitlements */; };
+		19B0B5DC250A0B2500076D38 /* Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B0B5DB250A0B2500076D38 /* Info-dev.plist */; };
+		44C8871B36B0463692DDAFF6 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A32D587E12405FB9D3217B /* EvilIcons.ttf */; };
+		4EF0255059674B34B4B338F1 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F93EC38174B4F30905F2509 /* MaterialCommunityIcons.ttf */; };
+		67F600A1BACE4D33845CF233 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD2F778868864DAF80122089 /* Feather.ttf */; };
+		8410AF8E2645432900A47020 /* QMQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF372645432900A47020 /* QMQuestionModel.m */; };
+		8410AF8F2645432900A47020 /* QMLogistcsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF3A2645432900A47020 /* QMLogistcsInfoModel.m */; };
+		8410AF902645432900A47020 /* QMChatImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF3C2645432900A47020 /* QMChatImageCell.m */; };
+		8410AF912645432900A47020 /* QMChatCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF3E2645432900A47020 /* QMChatCardCell.m */; };
+		8410AF922645432900A47020 /* QMChatRobotFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF3F2645432900A47020 /* QMChatRobotFlowCell.m */; };
+		8410AF932645432900A47020 /* QMChatCommonProblemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF482645432900A47020 /* QMChatCommonProblemCell.m */; };
+		8410AF942645432900A47020 /* QMLeaveMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF492645432900A47020 /* QMLeaveMessageCell.m */; };
+		8410AF952645432900A47020 /* QMChatNewCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF4A2645432900A47020 /* QMChatNewCardCell.m */; };
+		8410AF962645432900A47020 /* QMChatCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF4B2645432900A47020 /* QMChatCellFactory.m */; };
+		8410AF972645432900A47020 /* QMChatRobotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF4C2645432900A47020 /* QMChatRobotCell.m */; };
+		8410AF982645432900A47020 /* QMChatVoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF4D2645432900A47020 /* QMChatVoiceCell.m */; };
+		8410AF992645432900A47020 /* QMChatTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF4E2645432900A47020 /* QMChatTextCell.m */; };
+		8410AF9A2645432900A47020 /* QMChatCallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF512645432900A47020 /* QMChatCallCell.m */; };
+		8410AF9B2645432900A47020 /* QMChatBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF532645432900A47020 /* QMChatBaseCell.m */; };
+		8410AF9C2645432900A47020 /* QMQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF542645432900A47020 /* QMQuestionCell.m */; };
+		8410AF9D2645432900A47020 /* QMChatNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF592645432900A47020 /* QMChatNoteCell.m */; };
+		8410AF9E2645432900A47020 /* QMChatFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF5A2645432900A47020 /* QMChatFileCell.m */; };
+		8410AF9F2645432900A47020 /* QMChatRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF5B2645432900A47020 /* QMChatRichTextCell.m */; };
+		8410AFA02645432900A47020 /* QMChatFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF5D2645432900A47020 /* QMChatFlowView.m */; };
+		8410AFA12645432900A47020 /* AnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF602645432900A47020 /* AnswerView.m */; };
+		8410AFA22645432900A47020 /* AnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF622645432900A47020 /* AnswerCell.m */; };
+		8410AFA32645432900A47020 /* AnswerMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF632645432900A47020 /* AnswerMoreView.m */; };
+		8410AFA42645432900A47020 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF662645432900A47020 /* SegmentView.m */; };
+		8410AFA52645432900A47020 /* QMChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF682645432900A47020 /* QMChatMoreView.m */; };
+		8410AFA62645432900A47020 /* TCFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF692645432900A47020 /* TCFaceView.m */; };
+		8410AFA72645432900A47020 /* QMChatFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF6A2645432900A47020 /* QMChatFaceView.m */; };
+		8410AFA82645432900A47020 /* QMChatBottomListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF6E2645432900A47020 /* QMChatBottomListView.m */; };
+		8410AFA92645432900A47020 /* QMRecordIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF6F2645432900A47020 /* QMRecordIndicatorView.m */; };
+		8410AFAA2645432900A47020 /* QMChatRobotReplyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF712645432900A47020 /* QMChatRobotReplyView.m */; };
+		8410AFAB2645432900A47020 /* QMChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF752645432900A47020 /* QMChatInputView.m */; };
+		8410AFAC2645432900A47020 /* QMChatTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF772645432900A47020 /* QMChatTitleView.m */; };
+		8410AFAD2645432900A47020 /* QMChatAssociationInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF792645432900A47020 /* QMChatAssociationInputView.m */; };
+		8410AFAE2645432900A47020 /* QMChatEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF7C2645432900A47020 /* QMChatEvaluationView.m */; };
+		8410AFAF2645432900A47020 /* QMChatShowImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF7E2645432900A47020 /* QMChatShowImageViewController.m */; };
+		8410AFB02645432900A47020 /* QMChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF7F2645432900A47020 /* QMChatRoomViewController.m */; };
+		8410AFB22645432900A47020 /* QMQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF832645432900A47020 /* QMQuestionViewController.m */; };
+		8410AFB32645432900A47020 /* QMChatShowFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF852645432900A47020 /* QMChatShowFileViewController.m */; };
+		8410AFB42645432900A47020 /* QMQuestionSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF882645432900A47020 /* QMQuestionSubViewController.m */; };
+		8410AFB52645432900A47020 /* QMChatGuestBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF892645432900A47020 /* QMChatGuestBookViewController.m */; };
+		8410AFB62645432900A47020 /* QMChatShowRichTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AF8C2645432900A47020 /* QMChatShowRichTextController.m */; };
+		8410AFBC2645435200A47020 /* QMLineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410AFBB2645435200A47020 /* QMLineSDK.framework */; };
+		8410B0AF2645463900A47020 /* UIView+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0712645463900A47020 /* UIView+Hex.m */; };
+		8410B0B02645463900A47020 /* QMLabelText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0732645463900A47020 /* QMLabelText.m */; };
+		8410B0B12645463900A47020 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0742645463900A47020 /* UIColor+Hex.m */; };
+		8410B0B22645463900A47020 /* QMAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0772645463900A47020 /* QMAudioRecorder.m */; };
+		8410B0B32645463900A47020 /* QMAudioAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0782645463900A47020 /* QMAudioAnimation.m */; };
+		8410B0B42645463900A47020 /* QMAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B07C2645463900A47020 /* QMAudioPlayer.m */; };
+		8410B0B52645463900A47020 /* QMActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B07D2645463900A47020 /* QMActivityView.m */; };
+		8410B0B62645463900A47020 /* QMDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B07E2645463900A47020 /* QMDateManager.m */; };
+		8410B0B72645463900A47020 /* QMRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B07F2645463900A47020 /* QMRemind.m */; };
+		8410B0B82645463900A47020 /* QMTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0842645463900A47020 /* QMTapGestureRecognizer.m */; };
+		8410B0B92645463900A47020 /* QMItemCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0892645463900A47020 /* QMItemCollectionCell.m */; };
+		8410B0BA2645463900A47020 /* QMFileTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B08A2645463900A47020 /* QMFileTableCell.m */; };
+		8410B0BB2645463900A47020 /* QMFileCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B08B2645463900A47020 /* QMFileCollectionCell.m */; };
+		8410B0BC2645463900A47020 /* QMVideoTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0902645463900A47020 /* QMVideoTableCell.m */; };
+		8410B0BD2645463900A47020 /* QMProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0952645463900A47020 /* QMProfileManager.m */; };
+		8410B0BE2645463900A47020 /* QMFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0962645463900A47020 /* QMFileManager.m */; };
+		8410B0BF2645463900A47020 /* QMFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0972645463900A47020 /* QMFileModel.m */; };
+		8410B0C02645463900A47020 /* QMFileTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0992645463900A47020 /* QMFileTabbarView.m */; };
+		8410B0C12645463900A47020 /* QMPickedPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B09D2645463900A47020 /* QMPickedPhotoViewController.m */; };
+		8410B0C22645463900A47020 /* QMPickedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B09E2645463900A47020 /* QMPickedVideoViewController.m */; };
+		8410B0C32645463900A47020 /* QMPickedOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B09F2645463900A47020 /* QMPickedOtherViewController.m */; };
+		8410B0C42645463900A47020 /* QMPickedDocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0A02645463900A47020 /* QMPickedDocViewController.m */; };
+		8410B0C52645463900A47020 /* QMFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0A22645463900A47020 /* QMFileManagerController.m */; };
+		8410B0C62645463900A47020 /* QMPickedAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0A62645463900A47020 /* QMPickedAudioViewController.m */; };
+		8410B0C72645463900A47020 /* NSAttributedString+QMEmojiExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0AB2645463900A47020 /* NSAttributedString+QMEmojiExtension.m */; };
+		8410B0C82645463900A47020 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0AC2645463900A47020 /* PieView.m */; };
+		8410B0C92645463900A47020 /* QMPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0AD2645463900A47020 /* QMPushManager.m */; };
+		8410B0CA2645463900A47020 /* QMCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0AE2645463900A47020 /* QMCustomLayout.m */; };
+		8477570426491578002E22C7 /* ReactInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477570326491578002E22C7 /* ReactInteraction.m */; };
+		8477571226494A13002E22C7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8477571126494A13002E22C7 /* libsqlite3.0.tbd */; };
+		8477571826494A20002E22C7 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8477571726494A20002E22C7 /* libresolv.tbd */; };
+		847757BD264A3484002E22C7 /* LDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 847757BB264A3484002E22C7 /* LDTools.m */; };
+		84775F68264BB6BB002E22C7 /* LDLaunchLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84775F67264BB6BB002E22C7 /* LDLaunchLoadingView.m */; };
+		8484A22226455F88006272D2 /* LDQMLineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A22126455F88006272D2 /* LDQMLineManager.m */; };
+		8484A2E226462D2C006272D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8484A2E126462D2C006272D2 /* Localizable.strings */; };
+		8484A2F2264636E6006272D2 /* video_chat_tip_sender.aac in Resources */ = {isa = PBXBuildFile; fileRef = 8484A2EE264636E6006272D2 /* video_chat_tip_sender.aac */; };
+		8484A2F3264636E6006272D2 /* QMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8484A2EF264636E6006272D2 /* QMEmoticon.bundle */; };
+		8484A2F4264636E6006272D2 /* video_chat_tip_receiver.aac in Resources */ = {isa = PBXBuildFile; fileRef = 8484A2F0264636E6006272D2 /* video_chat_tip_receiver.aac */; };
+		8484A2F5264636E6006272D2 /* expressionImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8484A2F1264636E6006272D2 /* expressionImage.plist */; };
+		8484A45326466D74006272D2 /* QNUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A41826466D74006272D2 /* QNUploadManager.m */; };
+		8484A45426466D75006272D2 /* QNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A41926466D74006272D2 /* QNConfiguration.m */; };
+		8484A45526466D75006272D2 /* QNResumeUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A41B26466D74006272D2 /* QNResumeUpload.m */; };
+		8484A45626466D75006272D2 /* QNUpToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A41D26466D74006272D2 /* QNUpToken.m */; };
+		8484A45726466D75006272D2 /* QNFormUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42026466D74006272D2 /* QNFormUpload.m */; };
+		8484A45826466D75006272D2 /* QNUploadOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42126466D74006272D2 /* QNUploadOption.m */; };
+		8484A45926466D75006272D2 /* QNPHAssetResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42326466D74006272D2 /* QNPHAssetResource.m */; };
+		8484A45A26466D75006272D2 /* QNCrc32.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42426466D74006272D2 /* QNCrc32.m */; };
+		8484A45B26466D75006272D2 /* QNUrlSafeBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42726466D74006272D2 /* QNUrlSafeBase64.m */; };
+		8484A45C26466D75006272D2 /* QNFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42B26466D74006272D2 /* QNFile.m */; };
+		8484A45D26466D75006272D2 /* QNEtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42C26466D74006272D2 /* QNEtag.m */; };
+		8484A45E26466D75006272D2 /* QNSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A42E26466D74006272D2 /* QNSystem.m */; };
+		8484A45F26466D75006272D2 /* QNAsyncRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43126466D74006272D2 /* QNAsyncRun.m */; };
+		8484A46026466D75006272D2 /* QNALAssetFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43326466D74006272D2 /* QNALAssetFile.m */; };
+		8484A46126466D75006272D2 /* QNPHAssetFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43426466D74006272D2 /* QNPHAssetFile.m */; };
+		8484A46226466D75006272D2 /* QN_GTM_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43526466D74006272D2 /* QN_GTM_Base64.m */; };
+		8484A46326466D75006272D2 /* QNUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43B26466D74006272D2 /* QNUserAgent.m */; };
+		8484A46426466D75006272D2 /* QNResponseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43D26466D74006272D2 /* QNResponseInfo.m */; };
+		8484A46526466D75006272D2 /* QNSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A43F26466D74006272D2 /* QNSessionManager.m */; };
+		8484A46626466D75006272D2 /* QNFileRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A44226466D74006272D2 /* QNFileRecorder.m */; };
+		8484A46726466D75006272D2 /* QNPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A44826466D74006272D2 /* QNPipeline.m */; };
+		8484A46826466D75006272D2 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A44C26466D74006272D2 /* TTTAttributedLabel.m */; };
+		8484A46926466D75006272D2 /* MLEmojiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A44D26466D74006272D2 /* MLEmojiLabel.m */; };
+		8484A46A26466D75006272D2 /* SJVoiceTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484A44F26466D74006272D2 /* SJVoiceTransform.m */; };
+		8484A46B26466D75006272D2 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8484A45026466D74006272D2 /* libmp3lame.a */; };
+		84B13441263A8A1700841105 /* LDPaypalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B13440263A8A1700841105 /* LDPaypalWebViewController.m */; };
+		9605530726D4D3CF00E7FD5F /* InnoAntiSpamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605530626D4D3CF00E7FD5F /* InnoAntiSpamSDK.framework */; };
+		9605530926D4D3D400E7FD5F /* InnotechIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605530826D4D3D400E7FD5F /* InnotechIMSDK.framework */; };
+		9605530B26D4D9B600E7FD5F /* Branch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605530A26D4D9B600E7FD5F /* Branch.framework */; };
+		9605530D26D4DA3E00E7FD5F /* RNBranch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605530C26D4DA3E00E7FD5F /* RNBranch.framework */; };
+		975526FEDC3C4E21A8B34E6F /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 714B9046CBAC466B9B435C52 /* Entypo.ttf */; };
+		9CA7C53DD0A7483F9A643490 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89D155D3D8714104B2769631 /* MaterialIcons.ttf */; };
+		A541B49D9B92480C822C2AE5 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9216D101D09B4549BF6206DE /* FontAwesome5_Brands.ttf */; };
+		A6ECF8DEFF9E4FD08B1280EC /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 265B4B54A06346FDBBF84423 /* Impact.ttf */; };
+		AC433BDD6BEC48BAB819344F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA1EF39D7EB45268475619E /* Foundation.ttf */; };
+		B269CA803DE64681B68B5000 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 235AFEE190BC4E4A9B90FC9A /* FontAwesome5_Regular.ttf */; };
+		B6FC37E9144A49F69FB11BD9 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC24734BE6B34E628C5A0AE7 /* Fontisto.ttf */; };
+		B942E379CB824BB290A6A769 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDAE69AF79244C998EFA3345 /* FontAwesome5_Solid.ttf */; };
+		B98A38A92632BEF500745947 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = B98A38A82632BEF500745947 /* main.jsbundle */; };
+		C3256B196437452DAF73E88C /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D34F51595844219835EF2F1 /* Octicons.ttf */; };
+		CDC3D538A41BB995EE90841E /* Pods_LuckyDeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A7417EDF82667B136FADA7 /* Pods_LuckyDeal.framework */; };
+		E4AC83A32BA244FEAF6CE0F4 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D36F52018064172995DFF6B /* Ionicons.ttf */; };
+		EBFAB432A6804C6EBC6673FA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 342201CC614D4EB7A4898F70 /* AntDesign.ttf */; };
+		F9F3AEFD491841D78E3B1635 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C18BCBF22F7143CE8E3A6221 /* Zocial.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8477572926494A5C002E22C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* LuckyDealTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyDealTests.m; sourceTree = "<group>"; };
+		04A32D587E12405FB9D3217B /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		0F93EC38174B4F30905F2509 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* LuckyDeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyDeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LuckyDeal/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LuckyDeal/Info.plist; sourceTree = "<group>"; };
+		1480F84E2508DD0B007F9DC4 /* LuckyDeal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LuckyDeal.entitlements; path = LuckyDeal/LuckyDeal.entitlements; sourceTree = "<group>"; };
+		14AD10932519CBFA000FCBF0 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		14AF0F15247E8F50004F85AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14AF1524247E91DE004F85AB /* LuckyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckyUser.swift; sourceTree = "<group>"; };
+		14AF1528247F5B85004F85AB /* InnoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InnoCommon.framework; path = Frameworks/InnoCommon.framework; sourceTree = "<group>"; };
+		14AF152A247F8CC2004F85AB /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		14AF152C247F8CEF004F85AB /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		14AF152F247FB7FE004F85AB /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		14C8C384247BA0E000A05112 /* LuckyDeal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuckyDeal-Bridging-Header.h"; sourceTree = "<group>"; };
+		14C8C387247BA49200A05112 /* AppModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppModule.h; path = LuckyDeal/AppModule.h; sourceTree = "<group>"; };
+		14C8C388247BA49200A05112 /* AppModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppModule.m; path = LuckyDeal/AppModule.m; sourceTree = "<group>"; };
+		14E7555C250A17D2004A9329 /* UpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateManager.swift; sourceTree = "<group>"; };
+		14E7555E250B5470004A9329 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14E75560250F4E67004A9329 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		19B0B5DB250A0B2500076D38 /* Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-dev.plist"; path = "LuckyDeal/Info-dev.plist"; sourceTree = "<group>"; };
+		208209DCC199C0D75A61116B /* Pods-LuckyDeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDeal.release.xcconfig"; path = "Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal.release.xcconfig"; sourceTree = "<group>"; };
+		235AFEE190BC4E4A9B90FC9A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		23A7417EDF82667B136FADA7 /* Pods_LuckyDeal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyDeal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		265B4B54A06346FDBBF84423 /* Impact.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Impact.ttf; path = ../src/assets/fonts/Impact.ttf; sourceTree = "<group>"; };
+		342201CC614D4EB7A4898F70 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		366F3CBA1B224B3B8036C1EC /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		49D94951B35724CA67C4F58F /* Pods-LuckyDeal-LuckyDealTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDeal-LuckyDealTests.debug.xcconfig"; path = "Target Support Files/Pods-LuckyDeal-LuckyDealTests/Pods-LuckyDeal-LuckyDealTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D34F51595844219835EF2F1 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		6D36F52018064172995DFF6B /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		6E8500E67D5336C3DA77A57D /* Pods-LuckyDeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDeal.debug.xcconfig"; path = "Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal.debug.xcconfig"; sourceTree = "<group>"; };
+		714B9046CBAC466B9B435C52 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		8410AF372645432900A47020 /* QMQuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMQuestionModel.m; sourceTree = "<group>"; };
+		8410AF382645432900A47020 /* QMLogistcsInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLogistcsInfoModel.h; sourceTree = "<group>"; };
+		8410AF392645432900A47020 /* QMQuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMQuestionModel.h; sourceTree = "<group>"; };
+		8410AF3A2645432900A47020 /* QMLogistcsInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLogistcsInfoModel.m; sourceTree = "<group>"; };
+		8410AF3C2645432900A47020 /* QMChatImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatImageCell.m; sourceTree = "<group>"; };
+		8410AF3D2645432900A47020 /* QMChatCallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatCallCell.h; sourceTree = "<group>"; };
+		8410AF3E2645432900A47020 /* QMChatCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatCardCell.m; sourceTree = "<group>"; };
+		8410AF3F2645432900A47020 /* QMChatRobotFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatRobotFlowCell.m; sourceTree = "<group>"; };
+		8410AF402645432900A47020 /* QMChatTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatTextCell.h; sourceTree = "<group>"; };
+		8410AF412645432900A47020 /* QMChatVoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatVoiceCell.h; sourceTree = "<group>"; };
+		8410AF422645432900A47020 /* QMChatRobotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatRobotCell.h; sourceTree = "<group>"; };
+		8410AF432645432900A47020 /* QMQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMQuestionCell.h; sourceTree = "<group>"; };
+		8410AF442645432900A47020 /* QMChatBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatBaseCell.h; sourceTree = "<group>"; };
+		8410AF452645432900A47020 /* QMChatFileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatFileCell.h; sourceTree = "<group>"; };
+		8410AF462645432900A47020 /* QMChatRichTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatRichTextCell.h; sourceTree = "<group>"; };
+		8410AF472645432900A47020 /* QMChatNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatNoteCell.h; sourceTree = "<group>"; };
+		8410AF482645432900A47020 /* QMChatCommonProblemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatCommonProblemCell.m; sourceTree = "<group>"; };
+		8410AF492645432900A47020 /* QMLeaveMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLeaveMessageCell.m; sourceTree = "<group>"; };
+		8410AF4A2645432900A47020 /* QMChatNewCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatNewCardCell.m; sourceTree = "<group>"; };
+		8410AF4B2645432900A47020 /* QMChatCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatCellFactory.m; sourceTree = "<group>"; };
+		8410AF4C2645432900A47020 /* QMChatRobotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatRobotCell.m; sourceTree = "<group>"; };
+		8410AF4D2645432900A47020 /* QMChatVoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatVoiceCell.m; sourceTree = "<group>"; };
+		8410AF4E2645432900A47020 /* QMChatTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatTextCell.m; sourceTree = "<group>"; };
+		8410AF4F2645432900A47020 /* QMChatRobotFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatRobotFlowCell.h; sourceTree = "<group>"; };
+		8410AF502645432900A47020 /* QMChatCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatCardCell.h; sourceTree = "<group>"; };
+		8410AF512645432900A47020 /* QMChatCallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatCallCell.m; sourceTree = "<group>"; };
+		8410AF522645432900A47020 /* QMChatImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatImageCell.h; sourceTree = "<group>"; };
+		8410AF532645432900A47020 /* QMChatBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatBaseCell.m; sourceTree = "<group>"; };
+		8410AF542645432900A47020 /* QMQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMQuestionCell.m; sourceTree = "<group>"; };
+		8410AF552645432900A47020 /* QMChatCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatCellFactory.h; sourceTree = "<group>"; };
+		8410AF562645432900A47020 /* QMChatNewCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatNewCardCell.h; sourceTree = "<group>"; };
+		8410AF572645432900A47020 /* QMChatCommonProblemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatCommonProblemCell.h; sourceTree = "<group>"; };
+		8410AF582645432900A47020 /* QMLeaveMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLeaveMessageCell.h; sourceTree = "<group>"; };
+		8410AF592645432900A47020 /* QMChatNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatNoteCell.m; sourceTree = "<group>"; };
+		8410AF5A2645432900A47020 /* QMChatFileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatFileCell.m; sourceTree = "<group>"; };
+		8410AF5B2645432900A47020 /* QMChatRichTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatRichTextCell.m; sourceTree = "<group>"; };
+		8410AF5D2645432900A47020 /* QMChatFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatFlowView.m; sourceTree = "<group>"; };
+		8410AF5F2645432900A47020 /* AnswerMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerMoreView.h; sourceTree = "<group>"; };
+		8410AF602645432900A47020 /* AnswerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerView.m; sourceTree = "<group>"; };
+		8410AF612645432900A47020 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
+		8410AF622645432900A47020 /* AnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerCell.m; sourceTree = "<group>"; };
+		8410AF632645432900A47020 /* AnswerMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerMoreView.m; sourceTree = "<group>"; };
+		8410AF642645432900A47020 /* AnswerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerView.h; sourceTree = "<group>"; };
+		8410AF652645432900A47020 /* AnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerCell.h; sourceTree = "<group>"; };
+		8410AF662645432900A47020 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
+		8410AF672645432900A47020 /* QMChatRobotReplyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatRobotReplyView.h; sourceTree = "<group>"; };
+		8410AF682645432900A47020 /* QMChatMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatMoreView.m; sourceTree = "<group>"; };
+		8410AF692645432900A47020 /* TCFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCFaceView.m; sourceTree = "<group>"; };
+		8410AF6A2645432900A47020 /* QMChatFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatFaceView.m; sourceTree = "<group>"; };
+		8410AF6B2645432900A47020 /* QMChatTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatTitleView.h; sourceTree = "<group>"; };
+		8410AF6C2645432900A47020 /* QMChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatInputView.h; sourceTree = "<group>"; };
+		8410AF6D2645432900A47020 /* QMChatEvaluationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatEvaluationView.h; sourceTree = "<group>"; };
+		8410AF6E2645432900A47020 /* QMChatBottomListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatBottomListView.m; sourceTree = "<group>"; };
+		8410AF6F2645432900A47020 /* QMRecordIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMRecordIndicatorView.m; sourceTree = "<group>"; };
+		8410AF702645432900A47020 /* QMChatAssociationInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatAssociationInputView.h; sourceTree = "<group>"; };
+		8410AF712645432900A47020 /* QMChatRobotReplyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatRobotReplyView.m; sourceTree = "<group>"; };
+		8410AF722645432900A47020 /* QMChatFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatFlowView.h; sourceTree = "<group>"; };
+		8410AF732645432900A47020 /* IMSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		8410AF742645432900A47020 /* QMChatMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatMoreView.h; sourceTree = "<group>"; };
+		8410AF752645432900A47020 /* QMChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatInputView.m; sourceTree = "<group>"; };
+		8410AF762645432900A47020 /* QMChatFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatFaceView.h; sourceTree = "<group>"; };
+		8410AF772645432900A47020 /* QMChatTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatTitleView.m; sourceTree = "<group>"; };
+		8410AF782645432900A47020 /* TCFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCFaceView.h; sourceTree = "<group>"; };
+		8410AF792645432900A47020 /* QMChatAssociationInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatAssociationInputView.m; sourceTree = "<group>"; };
+		8410AF7A2645432900A47020 /* QMRecordIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMRecordIndicatorView.h; sourceTree = "<group>"; };
+		8410AF7B2645432900A47020 /* QMChatBottomListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatBottomListView.h; sourceTree = "<group>"; };
+		8410AF7C2645432900A47020 /* QMChatEvaluationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatEvaluationView.m; sourceTree = "<group>"; };
+		8410AF7E2645432900A47020 /* QMChatShowImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatShowImageViewController.m; sourceTree = "<group>"; };
+		8410AF7F2645432900A47020 /* QMChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatRoomViewController.m; sourceTree = "<group>"; };
+		8410AF812645432900A47020 /* QMChatGuestBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatGuestBookViewController.h; sourceTree = "<group>"; };
+		8410AF822645432900A47020 /* QMQuestionSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMQuestionSubViewController.h; sourceTree = "<group>"; };
+		8410AF832645432900A47020 /* QMQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMQuestionViewController.m; sourceTree = "<group>"; };
+		8410AF842645432900A47020 /* QMChatShowRichTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatShowRichTextController.h; sourceTree = "<group>"; };
+		8410AF852645432900A47020 /* QMChatShowFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatShowFileViewController.m; sourceTree = "<group>"; };
+		8410AF862645432900A47020 /* QMChatShowImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatShowImageViewController.h; sourceTree = "<group>"; };
+		8410AF872645432900A47020 /* QMChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatRoomViewController.h; sourceTree = "<group>"; };
+		8410AF882645432900A47020 /* QMQuestionSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMQuestionSubViewController.m; sourceTree = "<group>"; };
+		8410AF892645432900A47020 /* QMChatGuestBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatGuestBookViewController.m; sourceTree = "<group>"; };
+		8410AF8B2645432900A47020 /* QMChatShowFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMChatShowFileViewController.h; sourceTree = "<group>"; };
+		8410AF8C2645432900A47020 /* QMChatShowRichTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMChatShowRichTextController.m; sourceTree = "<group>"; };
+		8410AF8D2645432900A47020 /* QMQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMQuestionViewController.h; sourceTree = "<group>"; };
+		8410AFBB2645435200A47020 /* QMLineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMLineSDK.framework; sourceTree = "<group>"; };
+		8410B0712645463900A47020 /* UIView+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hex.m"; sourceTree = "<group>"; };
+		8410B0722645463900A47020 /* QMTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTapGestureRecognizer.h; sourceTree = "<group>"; };
+		8410B0732645463900A47020 /* QMLabelText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMLabelText.m; sourceTree = "<group>"; };
+		8410B0742645463900A47020 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		8410B0752645463900A47020 /* NSAttributedString+QMEmojiExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+QMEmojiExtension.h"; sourceTree = "<group>"; };
+		8410B0772645463900A47020 /* QMAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAudioRecorder.m; sourceTree = "<group>"; };
+		8410B0782645463900A47020 /* QMAudioAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAudioAnimation.m; sourceTree = "<group>"; };
+		8410B0792645463900A47020 /* QMAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAudioPlayer.h; sourceTree = "<group>"; };
+		8410B07A2645463900A47020 /* QMAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAudioRecorder.h; sourceTree = "<group>"; };
+		8410B07B2645463900A47020 /* QMAudioAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAudioAnimation.h; sourceTree = "<group>"; };
+		8410B07C2645463900A47020 /* QMAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAudioPlayer.m; sourceTree = "<group>"; };
+		8410B07D2645463900A47020 /* QMActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMActivityView.m; sourceTree = "<group>"; };
+		8410B07E2645463900A47020 /* QMDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMDateManager.m; sourceTree = "<group>"; };
+		8410B07F2645463900A47020 /* QMRemind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMRemind.m; sourceTree = "<group>"; };
+		8410B0802645463900A47020 /* QMCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMCustomLayout.h; sourceTree = "<group>"; };
+		8410B0812645463900A47020 /* QMPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPushManager.h; sourceTree = "<group>"; };
+		8410B0822645463900A47020 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		8410B0832645463900A47020 /* QMLabelText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMLabelText.h; sourceTree = "<group>"; };
+		8410B0842645463900A47020 /* QMTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTapGestureRecognizer.m; sourceTree = "<group>"; };
+		8410B0852645463900A47020 /* UIView+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hex.h"; sourceTree = "<group>"; };
+		8410B0862645463900A47020 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		8410B0892645463900A47020 /* QMItemCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMItemCollectionCell.m; sourceTree = "<group>"; };
+		8410B08A2645463900A47020 /* QMFileTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFileTableCell.m; sourceTree = "<group>"; };
+		8410B08B2645463900A47020 /* QMFileCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFileCollectionCell.m; sourceTree = "<group>"; };
+		8410B08C2645463900A47020 /* QMVideoTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMVideoTableCell.h; sourceTree = "<group>"; };
+		8410B08D2645463900A47020 /* QMFileCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFileCollectionCell.h; sourceTree = "<group>"; };
+		8410B08E2645463900A47020 /* QMFileTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFileTableCell.h; sourceTree = "<group>"; };
+		8410B08F2645463900A47020 /* QMItemCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMItemCollectionCell.h; sourceTree = "<group>"; };
+		8410B0902645463900A47020 /* QMVideoTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMVideoTableCell.m; sourceTree = "<group>"; };
+		8410B0922645463900A47020 /* QMFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFileManager.h; sourceTree = "<group>"; };
+		8410B0932645463900A47020 /* QMProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMProfileManager.h; sourceTree = "<group>"; };
+		8410B0942645463900A47020 /* QMFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFileModel.h; sourceTree = "<group>"; };
+		8410B0952645463900A47020 /* QMProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMProfileManager.m; sourceTree = "<group>"; };
+		8410B0962645463900A47020 /* QMFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFileManager.m; sourceTree = "<group>"; };
+		8410B0972645463900A47020 /* QMFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFileModel.m; sourceTree = "<group>"; };
+		8410B0992645463900A47020 /* QMFileTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFileTabbarView.m; sourceTree = "<group>"; };
+		8410B09A2645463900A47020 /* QMFileTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFileTabbarView.h; sourceTree = "<group>"; };
+		8410B09C2645463900A47020 /* QMFileManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFileManagerController.h; sourceTree = "<group>"; };
+		8410B09D2645463900A47020 /* QMPickedPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPickedPhotoViewController.m; sourceTree = "<group>"; };
+		8410B09E2645463900A47020 /* QMPickedVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPickedVideoViewController.m; sourceTree = "<group>"; };
+		8410B09F2645463900A47020 /* QMPickedOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPickedOtherViewController.m; sourceTree = "<group>"; };
+		8410B0A02645463900A47020 /* QMPickedDocViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPickedDocViewController.m; sourceTree = "<group>"; };
+		8410B0A12645463900A47020 /* QMPickedAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPickedAudioViewController.h; sourceTree = "<group>"; };
+		8410B0A22645463900A47020 /* QMFileManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFileManagerController.m; sourceTree = "<group>"; };
+		8410B0A32645463900A47020 /* QMPickedOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPickedOtherViewController.h; sourceTree = "<group>"; };
+		8410B0A42645463900A47020 /* QMPickedVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPickedVideoViewController.h; sourceTree = "<group>"; };
+		8410B0A52645463900A47020 /* QMPickedPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPickedPhotoViewController.h; sourceTree = "<group>"; };
+		8410B0A62645463900A47020 /* QMPickedAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPickedAudioViewController.m; sourceTree = "<group>"; };
+		8410B0A72645463900A47020 /* QMPickedDocViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMPickedDocViewController.h; sourceTree = "<group>"; };
+		8410B0A82645463900A47020 /* QMRemind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMRemind.h; sourceTree = "<group>"; };
+		8410B0A92645463900A47020 /* QMDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMDateManager.h; sourceTree = "<group>"; };
+		8410B0AA2645463900A47020 /* QMActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMActivityView.h; sourceTree = "<group>"; };
+		8410B0AB2645463900A47020 /* NSAttributedString+QMEmojiExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+QMEmojiExtension.m"; sourceTree = "<group>"; };
+		8410B0AC2645463900A47020 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
+		8410B0AD2645463900A47020 /* QMPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMPushManager.m; sourceTree = "<group>"; };
+		8410B0AE2645463900A47020 /* QMCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMCustomLayout.m; sourceTree = "<group>"; };
+		8410B0CF26454F7100A47020 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8410B0D4264551A200A47020 /* LDBaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDBaseDefine.h; sourceTree = "<group>"; };
+		8477570226491577002E22C7 /* ReactInteraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactInteraction.h; sourceTree = "<group>"; };
+		8477570326491578002E22C7 /* ReactInteraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactInteraction.m; sourceTree = "<group>"; };
+		8477571126494A13002E22C7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8477571726494A20002E22C7 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		847757BB264A3484002E22C7 /* LDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTools.m; sourceTree = "<group>"; };
+		847757BC264A3484002E22C7 /* LDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTools.h; sourceTree = "<group>"; };
+		84775F66264BB6BB002E22C7 /* LDLaunchLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDLaunchLoadingView.h; sourceTree = "<group>"; };
+		84775F67264BB6BB002E22C7 /* LDLaunchLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDLaunchLoadingView.m; sourceTree = "<group>"; };
+		8484A22026455F88006272D2 /* LDQMLineManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDQMLineManager.h; sourceTree = "<group>"; };
+		8484A22126455F88006272D2 /* LDQMLineManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDQMLineManager.m; sourceTree = "<group>"; };
+		8484A2E126462D2C006272D2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8484A2EE264636E6006272D2 /* video_chat_tip_sender.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_sender.aac; sourceTree = "<group>"; };
+		8484A2EF264636E6006272D2 /* QMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMEmoticon.bundle; sourceTree = "<group>"; };
+		8484A2F0264636E6006272D2 /* video_chat_tip_receiver.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_receiver.aac; sourceTree = "<group>"; };
+		8484A2F1264636E6006272D2 /* expressionImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = expressionImage.plist; sourceTree = "<group>"; };
+		8484A41526466D74006272D2 /* QNResumeUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResumeUpload.h; sourceTree = "<group>"; };
+		8484A41626466D74006272D2 /* QNUploadOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUploadOption.h; sourceTree = "<group>"; };
+		8484A41726466D74006272D2 /* QNFormUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFormUpload.h; sourceTree = "<group>"; };
+		8484A41826466D74006272D2 /* QNUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadManager.m; sourceTree = "<group>"; };
+		8484A41926466D74006272D2 /* QNConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNConfiguration.m; sourceTree = "<group>"; };
+		8484A41A26466D74006272D2 /* QNUpToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUpToken.h; sourceTree = "<group>"; };
+		8484A41B26466D74006272D2 /* QNResumeUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNResumeUpload.m; sourceTree = "<group>"; };
+		8484A41C26466D74006272D2 /* QNUploadOption+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QNUploadOption+Private.h"; sourceTree = "<group>"; };
+		8484A41D26466D74006272D2 /* QNUpToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUpToken.m; sourceTree = "<group>"; };
+		8484A41E26466D74006272D2 /* QNConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNConfiguration.h; sourceTree = "<group>"; };
+		8484A41F26466D74006272D2 /* QNUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUploadManager.h; sourceTree = "<group>"; };
+		8484A42026466D74006272D2 /* QNFormUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFormUpload.m; sourceTree = "<group>"; };
+		8484A42126466D74006272D2 /* QNUploadOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadOption.m; sourceTree = "<group>"; };
+		8484A42326466D74006272D2 /* QNPHAssetResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPHAssetResource.m; sourceTree = "<group>"; };
+		8484A42426466D74006272D2 /* QNCrc32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCrc32.m; sourceTree = "<group>"; };
+		8484A42526466D74006272D2 /* QNFileDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFileDelegate.h; sourceTree = "<group>"; };
+		8484A42626466D74006272D2 /* QNALAssetFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNALAssetFile.h; sourceTree = "<group>"; };
+		8484A42726466D74006272D2 /* QNUrlSafeBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUrlSafeBase64.m; sourceTree = "<group>"; };
+		8484A42826466D74006272D2 /* QNAsyncRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNAsyncRun.h; sourceTree = "<group>"; };
+		8484A42926466D74006272D2 /* QN_GTM_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QN_GTM_Base64.h; sourceTree = "<group>"; };
+		8484A42A26466D74006272D2 /* QNPHAssetFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPHAssetFile.h; sourceTree = "<group>"; };
+		8484A42B26466D74006272D2 /* QNFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFile.m; sourceTree = "<group>"; };
+		8484A42C26466D74006272D2 /* QNEtag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEtag.m; sourceTree = "<group>"; };
+		8484A42D26466D74006272D2 /* QNVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNVersion.h; sourceTree = "<group>"; };
+		8484A42E26466D74006272D2 /* QNSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSystem.m; sourceTree = "<group>"; };
+		8484A42F26466D74006272D2 /* QNCrc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCrc32.h; sourceTree = "<group>"; };
+		8484A43026466D74006272D2 /* QNPHAssetResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPHAssetResource.h; sourceTree = "<group>"; };
+		8484A43126466D74006272D2 /* QNAsyncRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNAsyncRun.m; sourceTree = "<group>"; };
+		8484A43226466D74006272D2 /* QNUrlSafeBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUrlSafeBase64.h; sourceTree = "<group>"; };
+		8484A43326466D74006272D2 /* QNALAssetFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNALAssetFile.m; sourceTree = "<group>"; };
+		8484A43426466D74006272D2 /* QNPHAssetFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPHAssetFile.m; sourceTree = "<group>"; };
+		8484A43526466D74006272D2 /* QN_GTM_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QN_GTM_Base64.m; sourceTree = "<group>"; };
+		8484A43626466D74006272D2 /* QNSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSystem.h; sourceTree = "<group>"; };
+		8484A43726466D74006272D2 /* QNEtag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEtag.h; sourceTree = "<group>"; };
+		8484A43826466D74006272D2 /* QNFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFile.h; sourceTree = "<group>"; };
+		8484A43A26466D74006272D2 /* QNResponseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResponseInfo.h; sourceTree = "<group>"; };
+		8484A43B26466D74006272D2 /* QNUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUserAgent.m; sourceTree = "<group>"; };
+		8484A43C26466D74006272D2 /* QNSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSessionManager.h; sourceTree = "<group>"; };
+		8484A43D26466D74006272D2 /* QNResponseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNResponseInfo.m; sourceTree = "<group>"; };
+		8484A43E26466D74006272D2 /* QNHttpDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHttpDelegate.h; sourceTree = "<group>"; };
+		8484A43F26466D74006272D2 /* QNSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSessionManager.m; sourceTree = "<group>"; };
+		8484A44026466D74006272D2 /* QNUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUserAgent.h; sourceTree = "<group>"; };
+		8484A44226466D74006272D2 /* QNFileRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFileRecorder.m; sourceTree = "<group>"; };
+		8484A44326466D74006272D2 /* QNFileRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFileRecorder.h; sourceTree = "<group>"; };
+		8484A44426466D74006272D2 /* QNRecorderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRecorderDelegate.h; sourceTree = "<group>"; };
+		8484A44526466D74006272D2 /* QiniuSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuSDK.h; sourceTree = "<group>"; };
+		8484A44726466D74006272D2 /* QNPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPipeline.h; sourceTree = "<group>"; };
+		8484A44826466D74006272D2 /* QNPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPipeline.m; sourceTree = "<group>"; };
+		8484A44A26466D74006272D2 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		8484A44B26466D74006272D2 /* MLEmojiLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLEmojiLabel.h; sourceTree = "<group>"; };
+		8484A44C26466D74006272D2 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		8484A44D26466D74006272D2 /* MLEmojiLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLEmojiLabel.m; sourceTree = "<group>"; };
+		8484A44F26466D74006272D2 /* SJVoiceTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJVoiceTransform.m; sourceTree = "<group>"; };
+		8484A45026466D74006272D2 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		8484A45126466D74006272D2 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		8484A45226466D74006272D2 /* SJVoiceTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJVoiceTransform.h; sourceTree = "<group>"; };
+		84B1343F263A8A1700841105 /* LDPaypalWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDPaypalWebViewController.h; sourceTree = "<group>"; };
+		84B13440263A8A1700841105 /* LDPaypalWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDPaypalWebViewController.m; sourceTree = "<group>"; };
+		89D155D3D8714104B2769631 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		9216D101D09B4549BF6206DE /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		960552FC26D4D21B00E7FD5F /* Branch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Branch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960552FE26D4D22700E7FD5F /* InnoAntiSpamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InnoAntiSpamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530026D4D23400E7FD5F /* InnotechIMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InnotechIMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530226D4D2AF00E7FD5F /* InnoAntiSpamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InnoAntiSpamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530426D4D2D700E7FD5F /* Flurry_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flurry_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530626D4D3CF00E7FD5F /* InnoAntiSpamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InnoAntiSpamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530826D4D3D400E7FD5F /* InnotechIMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InnotechIMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530A26D4D9B600E7FD5F /* Branch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Branch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605530C26D4DA3E00E7FD5F /* RNBranch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNBranch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E7107F8E5906177A0F76F06 /* Pods-LuckyDeal.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDeal.dev.xcconfig"; path = "Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal.dev.xcconfig"; sourceTree = "<group>"; };
+		9FC7E0A7AC4255D0DE4D3D5F /* Pods-LuckyDeal-LuckyDealTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDeal-LuckyDealTests.dev.xcconfig"; path = "Target Support Files/Pods-LuckyDeal-LuckyDealTests/Pods-LuckyDeal-LuckyDealTests.dev.xcconfig"; sourceTree = "<group>"; };
+		AC24734BE6B34E628C5A0AE7 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		AE2A1B4E36644AC69A0CD1B9 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		B91F34E926315D4700C47437 /* InnoAntiSpamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InnoAntiSpamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98A38A82632BEF500745947 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		C18BCBF22F7143CE8E3A6221 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		CDAE69AF79244C998EFA3345 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		DEA1EF39D7EB45268475619E /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		EBF48A598A72BAB26441DEBF /* Pods-LuckyDeal-LuckyDealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDeal-LuckyDealTests.release.xcconfig"; path = "Target Support Files/Pods-LuckyDeal-LuckyDealTests/Pods-LuckyDeal-LuckyDealTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		FA726D9E044FF52A70D79DF7 /* Pods_LuckyDeal_LuckyDealTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyDeal_LuckyDealTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2F778868864DAF80122089 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9605530D26D4DA3E00E7FD5F /* RNBranch.framework in Frameworks */,
+				9605530B26D4D9B600E7FD5F /* Branch.framework in Frameworks */,
+				9605530926D4D3D400E7FD5F /* InnotechIMSDK.framework in Frameworks */,
+				9605530726D4D3CF00E7FD5F /* InnoAntiSpamSDK.framework in Frameworks */,
+				8477571826494A20002E22C7 /* libresolv.tbd in Frameworks */,
+				8477571226494A13002E22C7 /* libsqlite3.0.tbd in Frameworks */,
+				8484A46B26466D75006272D2 /* libmp3lame.a in Frameworks */,
+				14E75561250F4E67004A9329 /* StoreKit.framework in Frameworks */,
+				14AF1529247F5B85004F85AB /* InnoCommon.framework in Frameworks */,
+				8410AFBC2645435200A47020 /* QMLineSDK.framework in Frameworks */,
+				CDC3D538A41BB995EE90841E /* Pods_LuckyDeal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* LuckyDealTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* LuckyDealTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = LuckyDealTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* LuckyDeal */ = {
+			isa = PBXGroup;
+			children = (
+				845094B0264D0F5A00AFEF7B /* Utils */,
+				84775F65264BB69D002E22C7 /* LaunchLoading */,
+				847757BA264A3484002E22C7 /* Services */,
+				8484A2E126462D2C006272D2 /* Localizable.strings */,
+				8410B0CF26454F7100A47020 /* PrefixHeader.pch */,
+				8410AF3026453EF600A47020 /* QMLine */,
+				B98A38A82632BEF500745947 /* main.jsbundle */,
+				1480F84E2508DD0B007F9DC4 /* LuckyDeal.entitlements */,
+				14AF0F15247E8F50004F85AB /* AppDelegate.swift */,
+				14E7555C250A17D2004A9329 /* UpdateManager.swift */,
+				14AF151F247E9183004F85AB /* api */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				19B0B5DB250A0B2500076D38 /* Info-dev.plist */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				14C8C384247BA0E000A05112 /* LuckyDeal-Bridging-Header.h */,
+				14C8C387247BA49200A05112 /* AppModule.h */,
+				14C8C388247BA49200A05112 /* AppModule.m */,
+				84B1343F263A8A1700841105 /* LDPaypalWebViewController.h */,
+				84B13440263A8A1700841105 /* LDPaypalWebViewController.m */,
+				8477570226491577002E22C7 /* ReactInteraction.h */,
+				8477570326491578002E22C7 /* ReactInteraction.m */,
+			);
+			name = LuckyDeal;
+			sourceTree = "<group>";
+		};
+		14AF151F247E9183004F85AB /* api */ = {
+			isa = PBXGroup;
+			children = (
+				14AF1524247E91DE004F85AB /* LuckyUser.swift */,
+				14AD10932519CBFA000FCBF0 /* ApiManager.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9605530C26D4DA3E00E7FD5F /* RNBranch.framework */,
+				9605530A26D4D9B600E7FD5F /* Branch.framework */,
+				9605530826D4D3D400E7FD5F /* InnotechIMSDK.framework */,
+				9605530626D4D3CF00E7FD5F /* InnoAntiSpamSDK.framework */,
+				9605530426D4D2D700E7FD5F /* Flurry_iOS_SDK.framework */,
+				9605530226D4D2AF00E7FD5F /* InnoAntiSpamSDK.framework */,
+				9605530026D4D23400E7FD5F /* InnotechIMSDK.framework */,
+				960552FE26D4D22700E7FD5F /* InnoAntiSpamSDK.framework */,
+				960552FC26D4D21B00E7FD5F /* Branch.framework */,
+				8477571726494A20002E22C7 /* libresolv.tbd */,
+				8477571126494A13002E22C7 /* libsqlite3.0.tbd */,
+				B91F34E926315D4700C47437 /* InnoAntiSpamSDK.framework */,
+				14E75560250F4E67004A9329 /* StoreKit.framework */,
+				14AF1528247F5B85004F85AB /* InnoCommon.framework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				23A7417EDF82667B136FADA7 /* Pods_LuckyDeal.framework */,
+				FA726D9E044FF52A70D79DF7 /* Pods_LuckyDeal_LuckyDealTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A43C547F89B439A9BE476EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				342201CC614D4EB7A4898F70 /* AntDesign.ttf */,
+				714B9046CBAC466B9B435C52 /* Entypo.ttf */,
+				04A32D587E12405FB9D3217B /* EvilIcons.ttf */,
+				FD2F778868864DAF80122089 /* Feather.ttf */,
+				AE2A1B4E36644AC69A0CD1B9 /* FontAwesome.ttf */,
+				9216D101D09B4549BF6206DE /* FontAwesome5_Brands.ttf */,
+				235AFEE190BC4E4A9B90FC9A /* FontAwesome5_Regular.ttf */,
+				CDAE69AF79244C998EFA3345 /* FontAwesome5_Solid.ttf */,
+				AC24734BE6B34E628C5A0AE7 /* Fontisto.ttf */,
+				DEA1EF39D7EB45268475619E /* Foundation.ttf */,
+				6D36F52018064172995DFF6B /* Ionicons.ttf */,
+				0F93EC38174B4F30905F2509 /* MaterialCommunityIcons.ttf */,
+				89D155D3D8714104B2769631 /* MaterialIcons.ttf */,
+				5D34F51595844219835EF2F1 /* Octicons.ttf */,
+				366F3CBA1B224B3B8036C1EC /* SimpleLineIcons.ttf */,
+				C18BCBF22F7143CE8E3A6221 /* Zocial.ttf */,
+				265B4B54A06346FDBBF84423 /* Impact.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* LuckyDeal */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* LuckyDealTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				E5DF4A025F270A3E2E9BA7C6 /* Pods */,
+				5A43C547F89B439A9BE476EC /* Resources */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* LuckyDeal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8410AF3026453EF600A47020 /* QMLine */ = {
+			isa = PBXGroup;
+			children = (
+				8484A41226466D74006272D2 /* 3rdLib */,
+				8484A2ED264636E6006272D2 /* Resources */,
+				8410B0702645463900A47020 /* Tools */,
+				8410AFBB2645435200A47020 /* QMLineSDK.framework */,
+				8410AF352645432900A47020 /* QMChatVC */,
+				8410B0D4264551A200A47020 /* LDBaseDefine.h */,
+				8484A22026455F88006272D2 /* LDQMLineManager.h */,
+				8484A22126455F88006272D2 /* LDQMLineManager.m */,
+			);
+			path = QMLine;
+			sourceTree = "<group>";
+		};
+		8410AF352645432900A47020 /* QMChatVC */ = {
+			isa = PBXGroup;
+			children = (
+				8410AF362645432900A47020 /* Models */,
+				8410AF3B2645432900A47020 /* Cell */,
+				8410AF5C2645432900A47020 /* View */,
+				8410AF7D2645432900A47020 /* ViewController */,
+			);
+			path = QMChatVC;
+			sourceTree = "<group>";
+		};
+		8410AF362645432900A47020 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8410AF372645432900A47020 /* QMQuestionModel.m */,
+				8410AF382645432900A47020 /* QMLogistcsInfoModel.h */,
+				8410AF392645432900A47020 /* QMQuestionModel.h */,
+				8410AF3A2645432900A47020 /* QMLogistcsInfoModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8410AF3B2645432900A47020 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8410AF3C2645432900A47020 /* QMChatImageCell.m */,
+				8410AF3D2645432900A47020 /* QMChatCallCell.h */,
+				8410AF3E2645432900A47020 /* QMChatCardCell.m */,
+				8410AF3F2645432900A47020 /* QMChatRobotFlowCell.m */,
+				8410AF402645432900A47020 /* QMChatTextCell.h */,
+				8410AF412645432900A47020 /* QMChatVoiceCell.h */,
+				8410AF422645432900A47020 /* QMChatRobotCell.h */,
+				8410AF432645432900A47020 /* QMQuestionCell.h */,
+				8410AF442645432900A47020 /* QMChatBaseCell.h */,
+				8410AF452645432900A47020 /* QMChatFileCell.h */,
+				8410AF462645432900A47020 /* QMChatRichTextCell.h */,
+				8410AF472645432900A47020 /* QMChatNoteCell.h */,
+				8410AF482645432900A47020 /* QMChatCommonProblemCell.m */,
+				8410AF492645432900A47020 /* QMLeaveMessageCell.m */,
+				8410AF4A2645432900A47020 /* QMChatNewCardCell.m */,
+				8410AF4B2645432900A47020 /* QMChatCellFactory.m */,
+				8410AF4C2645432900A47020 /* QMChatRobotCell.m */,
+				8410AF4D2645432900A47020 /* QMChatVoiceCell.m */,
+				8410AF4E2645432900A47020 /* QMChatTextCell.m */,
+				8410AF4F2645432900A47020 /* QMChatRobotFlowCell.h */,
+				8410AF502645432900A47020 /* QMChatCardCell.h */,
+				8410AF512645432900A47020 /* QMChatCallCell.m */,
+				8410AF522645432900A47020 /* QMChatImageCell.h */,
+				8410AF532645432900A47020 /* QMChatBaseCell.m */,
+				8410AF542645432900A47020 /* QMQuestionCell.m */,
+				8410AF552645432900A47020 /* QMChatCellFactory.h */,
+				8410AF562645432900A47020 /* QMChatNewCardCell.h */,
+				8410AF572645432900A47020 /* QMChatCommonProblemCell.h */,
+				8410AF582645432900A47020 /* QMLeaveMessageCell.h */,
+				8410AF592645432900A47020 /* QMChatNoteCell.m */,
+				8410AF5A2645432900A47020 /* QMChatFileCell.m */,
+				8410AF5B2645432900A47020 /* QMChatRichTextCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8410AF5C2645432900A47020 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8410AF5D2645432900A47020 /* QMChatFlowView.m */,
+				8410AF5E2645432900A47020 /* CommonProblem */,
+				8410AF672645432900A47020 /* QMChatRobotReplyView.h */,
+				8410AF682645432900A47020 /* QMChatMoreView.m */,
+				8410AF692645432900A47020 /* TCFaceView.m */,
+				8410AF6A2645432900A47020 /* QMChatFaceView.m */,
+				8410AF6B2645432900A47020 /* QMChatTitleView.h */,
+				8410AF6C2645432900A47020 /* QMChatInputView.h */,
+				8410AF6D2645432900A47020 /* QMChatEvaluationView.h */,
+				8410AF6E2645432900A47020 /* QMChatBottomListView.m */,
+				8410AF6F2645432900A47020 /* QMRecordIndicatorView.m */,
+				8410AF702645432900A47020 /* QMChatAssociationInputView.h */,
+				8410AF712645432900A47020 /* QMChatRobotReplyView.m */,
+				8410AF722645432900A47020 /* QMChatFlowView.h */,
+				8410AF732645432900A47020 /* IMSDK-Bridging-Header.h */,
+				8410AF742645432900A47020 /* QMChatMoreView.h */,
+				8410AF752645432900A47020 /* QMChatInputView.m */,
+				8410AF762645432900A47020 /* QMChatFaceView.h */,
+				8410AF772645432900A47020 /* QMChatTitleView.m */,
+				8410AF782645432900A47020 /* TCFaceView.h */,
+				8410AF792645432900A47020 /* QMChatAssociationInputView.m */,
+				8410AF7A2645432900A47020 /* QMRecordIndicatorView.h */,
+				8410AF7B2645432900A47020 /* QMChatBottomListView.h */,
+				8410AF7C2645432900A47020 /* QMChatEvaluationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8410AF5E2645432900A47020 /* CommonProblem */ = {
+			isa = PBXGroup;
+			children = (
+				8410AF5F2645432900A47020 /* AnswerMoreView.h */,
+				8410AF602645432900A47020 /* AnswerView.m */,
+				8410AF612645432900A47020 /* SegmentView.h */,
+				8410AF622645432900A47020 /* AnswerCell.m */,
+				8410AF632645432900A47020 /* AnswerMoreView.m */,
+				8410AF642645432900A47020 /* AnswerView.h */,
+				8410AF652645432900A47020 /* AnswerCell.h */,
+				8410AF662645432900A47020 /* SegmentView.m */,
+			);
+			path = CommonProblem;
+			sourceTree = "<group>";
+		};
+		8410AF7D2645432900A47020 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8410AF7E2645432900A47020 /* QMChatShowImageViewController.m */,
+				8410AF7F2645432900A47020 /* QMChatRoomViewController.m */,
+				8410AF812645432900A47020 /* QMChatGuestBookViewController.h */,
+				8410AF822645432900A47020 /* QMQuestionSubViewController.h */,
+				8410AF832645432900A47020 /* QMQuestionViewController.m */,
+				8410AF842645432900A47020 /* QMChatShowRichTextController.h */,
+				8410AF852645432900A47020 /* QMChatShowFileViewController.m */,
+				8410AF862645432900A47020 /* QMChatShowImageViewController.h */,
+				8410AF872645432900A47020 /* QMChatRoomViewController.h */,
+				8410AF882645432900A47020 /* QMQuestionSubViewController.m */,
+				8410AF892645432900A47020 /* QMChatGuestBookViewController.m */,
+				8410AF8B2645432900A47020 /* QMChatShowFileViewController.h */,
+				8410AF8C2645432900A47020 /* QMChatShowRichTextController.m */,
+				8410AF8D2645432900A47020 /* QMQuestionViewController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8410B0702645463900A47020 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0712645463900A47020 /* UIView+Hex.m */,
+				8410B0722645463900A47020 /* QMTapGestureRecognizer.h */,
+				8410B0732645463900A47020 /* QMLabelText.m */,
+				8410B0742645463900A47020 /* UIColor+Hex.m */,
+				8410B0752645463900A47020 /* NSAttributedString+QMEmojiExtension.h */,
+				8410B0762645463900A47020 /* QMAudio */,
+				8410B07D2645463900A47020 /* QMActivityView.m */,
+				8410B07E2645463900A47020 /* QMDateManager.m */,
+				8410B07F2645463900A47020 /* QMRemind.m */,
+				8410B0802645463900A47020 /* QMCustomLayout.h */,
+				8410B0812645463900A47020 /* QMPushManager.h */,
+				8410B0822645463900A47020 /* PieView.h */,
+				8410B0832645463900A47020 /* QMLabelText.h */,
+				8410B0842645463900A47020 /* QMTapGestureRecognizer.m */,
+				8410B0852645463900A47020 /* UIView+Hex.h */,
+				8410B0862645463900A47020 /* UIColor+Hex.h */,
+				8410B0872645463900A47020 /* FileManager */,
+				8410B0A82645463900A47020 /* QMRemind.h */,
+				8410B0A92645463900A47020 /* QMDateManager.h */,
+				8410B0AA2645463900A47020 /* QMActivityView.h */,
+				8410B0AB2645463900A47020 /* NSAttributedString+QMEmojiExtension.m */,
+				8410B0AC2645463900A47020 /* PieView.m */,
+				8410B0AD2645463900A47020 /* QMPushManager.m */,
+				8410B0AE2645463900A47020 /* QMCustomLayout.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8410B0762645463900A47020 /* QMAudio */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0772645463900A47020 /* QMAudioRecorder.m */,
+				8410B0782645463900A47020 /* QMAudioAnimation.m */,
+				8410B0792645463900A47020 /* QMAudioPlayer.h */,
+				8410B07A2645463900A47020 /* QMAudioRecorder.h */,
+				8410B07B2645463900A47020 /* QMAudioAnimation.h */,
+				8410B07C2645463900A47020 /* QMAudioPlayer.m */,
+			);
+			path = QMAudio;
+			sourceTree = "<group>";
+		};
+		8410B0872645463900A47020 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0882645463900A47020 /* Cell */,
+				8410B0912645463900A47020 /* Model */,
+				8410B0982645463900A47020 /* View */,
+				8410B09B2645463900A47020 /* ViewController */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		8410B0882645463900A47020 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0892645463900A47020 /* QMItemCollectionCell.m */,
+				8410B08A2645463900A47020 /* QMFileTableCell.m */,
+				8410B08B2645463900A47020 /* QMFileCollectionCell.m */,
+				8410B08C2645463900A47020 /* QMVideoTableCell.h */,
+				8410B08D2645463900A47020 /* QMFileCollectionCell.h */,
+				8410B08E2645463900A47020 /* QMFileTableCell.h */,
+				8410B08F2645463900A47020 /* QMItemCollectionCell.h */,
+				8410B0902645463900A47020 /* QMVideoTableCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8410B0912645463900A47020 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0922645463900A47020 /* QMFileManager.h */,
+				8410B0932645463900A47020 /* QMProfileManager.h */,
+				8410B0942645463900A47020 /* QMFileModel.h */,
+				8410B0952645463900A47020 /* QMProfileManager.m */,
+				8410B0962645463900A47020 /* QMFileManager.m */,
+				8410B0972645463900A47020 /* QMFileModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8410B0982645463900A47020 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0992645463900A47020 /* QMFileTabbarView.m */,
+				8410B09A2645463900A47020 /* QMFileTabbarView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8410B09B2645463900A47020 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8410B09C2645463900A47020 /* QMFileManagerController.h */,
+				8410B09D2645463900A47020 /* QMPickedPhotoViewController.m */,
+				8410B09E2645463900A47020 /* QMPickedVideoViewController.m */,
+				8410B09F2645463900A47020 /* QMPickedOtherViewController.m */,
+				8410B0A02645463900A47020 /* QMPickedDocViewController.m */,
+				8410B0A12645463900A47020 /* QMPickedAudioViewController.h */,
+				8410B0A22645463900A47020 /* QMFileManagerController.m */,
+				8410B0A32645463900A47020 /* QMPickedOtherViewController.h */,
+				8410B0A42645463900A47020 /* QMPickedVideoViewController.h */,
+				8410B0A52645463900A47020 /* QMPickedPhotoViewController.h */,
+				8410B0A62645463900A47020 /* QMPickedAudioViewController.m */,
+				8410B0A72645463900A47020 /* QMPickedDocViewController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		845094B0264D0F5A00AFEF7B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14E7555E250B5470004A9329 /* Constants.swift */,
+				14AF152F247FB7FE004F85AB /* Report.swift */,
+				14AF152A247F8CC2004F85AB /* AppInfo.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		847757BA264A3484002E22C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14AF152C247F8CEF004F85AB /* NotificationManager.swift */,
+				847757BC264A3484002E22C7 /* LDTools.h */,
+				847757BB264A3484002E22C7 /* LDTools.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84775F65264BB69D002E22C7 /* LaunchLoading */ = {
+			isa = PBXGroup;
+			children = (
+				84775F66264BB6BB002E22C7 /* LDLaunchLoadingView.h */,
+				84775F67264BB6BB002E22C7 /* LDLaunchLoadingView.m */,
+			);
+			path = LaunchLoading;
+			sourceTree = "<group>";
+		};
+		8484A2ED264636E6006272D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8484A2EE264636E6006272D2 /* video_chat_tip_sender.aac */,
+				8484A2EF264636E6006272D2 /* QMEmoticon.bundle */,
+				8484A2F0264636E6006272D2 /* video_chat_tip_receiver.aac */,
+				8484A2F1264636E6006272D2 /* expressionImage.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8484A41226466D74006272D2 /* 3rdLib */ = {
+			isa = PBXGroup;
+			children = (
+				8484A41326466D74006272D2 /* QiniuSDK */,
+				8484A44926466D74006272D2 /* EmojiLabel */,
+				8484A44E26466D74006272D2 /* Voice */,
+			);
+			path = 3rdLib;
+			sourceTree = "<group>";
+		};
+		8484A41326466D74006272D2 /* QiniuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8484A41426466D74006272D2 /* Storage */,
+				8484A42226466D74006272D2 /* Common */,
+				8484A43926466D74006272D2 /* Http */,
+				8484A44126466D74006272D2 /* Recorder */,
+				8484A44526466D74006272D2 /* QiniuSDK.h */,
+				8484A44626466D74006272D2 /* BigData */,
+			);
+			path = QiniuSDK;
+			sourceTree = "<group>";
+		};
+		8484A41426466D74006272D2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				8484A41526466D74006272D2 /* QNResumeUpload.h */,
+				8484A41626466D74006272D2 /* QNUploadOption.h */,
+				8484A41726466D74006272D2 /* QNFormUpload.h */,
+				8484A41826466D74006272D2 /* QNUploadManager.m */,
+				8484A41926466D74006272D2 /* QNConfiguration.m */,
+				8484A41A26466D74006272D2 /* QNUpToken.h */,
+				8484A41B26466D74006272D2 /* QNResumeUpload.m */,
+				8484A41C26466D74006272D2 /* QNUploadOption+Private.h */,
+				8484A41D26466D74006272D2 /* QNUpToken.m */,
+				8484A41E26466D74006272D2 /* QNConfiguration.h */,
+				8484A41F26466D74006272D2 /* QNUploadManager.h */,
+				8484A42026466D74006272D2 /* QNFormUpload.m */,
+				8484A42126466D74006272D2 /* QNUploadOption.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		8484A42226466D74006272D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8484A42326466D74006272D2 /* QNPHAssetResource.m */,
+				8484A42426466D74006272D2 /* QNCrc32.m */,
+				8484A42526466D74006272D2 /* QNFileDelegate.h */,
+				8484A42626466D74006272D2 /* QNALAssetFile.h */,
+				8484A42726466D74006272D2 /* QNUrlSafeBase64.m */,
+				8484A42826466D74006272D2 /* QNAsyncRun.h */,
+				8484A42926466D74006272D2 /* QN_GTM_Base64.h */,
+				8484A42A26466D74006272D2 /* QNPHAssetFile.h */,
+				8484A42B26466D74006272D2 /* QNFile.m */,
+				8484A42C26466D74006272D2 /* QNEtag.m */,
+				8484A42D26466D74006272D2 /* QNVersion.h */,
+				8484A42E26466D74006272D2 /* QNSystem.m */,
+				8484A42F26466D74006272D2 /* QNCrc32.h */,
+				8484A43026466D74006272D2 /* QNPHAssetResource.h */,
+				8484A43126466D74006272D2 /* QNAsyncRun.m */,
+				8484A43226466D74006272D2 /* QNUrlSafeBase64.h */,
+				8484A43326466D74006272D2 /* QNALAssetFile.m */,
+				8484A43426466D74006272D2 /* QNPHAssetFile.m */,
+				8484A43526466D74006272D2 /* QN_GTM_Base64.m */,
+				8484A43626466D74006272D2 /* QNSystem.h */,
+				8484A43726466D74006272D2 /* QNEtag.h */,
+				8484A43826466D74006272D2 /* QNFile.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8484A43926466D74006272D2 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				8484A43A26466D74006272D2 /* QNResponseInfo.h */,
+				8484A43B26466D74006272D2 /* QNUserAgent.m */,
+				8484A43C26466D74006272D2 /* QNSessionManager.h */,
+				8484A43D26466D74006272D2 /* QNResponseInfo.m */,
+				8484A43E26466D74006272D2 /* QNHttpDelegate.h */,
+				8484A43F26466D74006272D2 /* QNSessionManager.m */,
+				8484A44026466D74006272D2 /* QNUserAgent.h */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		8484A44126466D74006272D2 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				8484A44226466D74006272D2 /* QNFileRecorder.m */,
+				8484A44326466D74006272D2 /* QNFileRecorder.h */,
+				8484A44426466D74006272D2 /* QNRecorderDelegate.h */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		8484A44626466D74006272D2 /* BigData */ = {
+			isa = PBXGroup;
+			children = (
+				8484A44726466D74006272D2 /* QNPipeline.h */,
+				8484A44826466D74006272D2 /* QNPipeline.m */,
+			);
+			path = BigData;
+			sourceTree = "<group>";
+		};
+		8484A44926466D74006272D2 /* EmojiLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8484A44A26466D74006272D2 /* TTTAttributedLabel.h */,
+				8484A44B26466D74006272D2 /* MLEmojiLabel.h */,
+				8484A44C26466D74006272D2 /* TTTAttributedLabel.m */,
+				8484A44D26466D74006272D2 /* MLEmojiLabel.m */,
+			);
+			path = EmojiLabel;
+			sourceTree = "<group>";
+		};
+		8484A44E26466D74006272D2 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				8484A44F26466D74006272D2 /* SJVoiceTransform.m */,
+				8484A45026466D74006272D2 /* libmp3lame.a */,
+				8484A45126466D74006272D2 /* lame.h */,
+				8484A45226466D74006272D2 /* SJVoiceTransform.h */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		E5DF4A025F270A3E2E9BA7C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E8500E67D5336C3DA77A57D /* Pods-LuckyDeal.debug.xcconfig */,
+				208209DCC199C0D75A61116B /* Pods-LuckyDeal.release.xcconfig */,
+				49D94951B35724CA67C4F58F /* Pods-LuckyDeal-LuckyDealTests.debug.xcconfig */,
+				EBF48A598A72BAB26441DEBF /* Pods-LuckyDeal-LuckyDealTests.release.xcconfig */,
+				9E7107F8E5906177A0F76F06 /* Pods-LuckyDeal.dev.xcconfig */,
+				9FC7E0A7AC4255D0DE4D3D5F /* Pods-LuckyDeal-LuckyDealTests.dev.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* LuckyDeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LuckyDeal" */;
+			buildPhases = (
+				B90ED9767E984CF0BA3A97DD /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				7B8CAFF1A11943BDBBD813BB /* Upload Debug Symbols to Sentry */,
+				824FF468FEC88B68ECD7467E /* [CP] Copy Pods Resources */,
+				8477572926494A5C002E22C7 /* Embed App Extensions */,
+				3F23DA5F557D8868362A61ED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyDeal;
+			productName = LuckyDeal;
+			productReference = 13B07F961A680F5B00A75B9A /* LuckyDeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LuckyDeal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* LuckyDeal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B0B5DA250A056700076D38 /* LuckyDeal.entitlements in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8484A2E226462D2C006272D2 /* Localizable.strings in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				EBFAB432A6804C6EBC6673FA /* AntDesign.ttf in Resources */,
+				975526FEDC3C4E21A8B34E6F /* Entypo.ttf in Resources */,
+				44C8871B36B0463692DDAFF6 /* EvilIcons.ttf in Resources */,
+				67F600A1BACE4D33845CF233 /* Feather.ttf in Resources */,
+				8484A2F4264636E6006272D2 /* video_chat_tip_receiver.aac in Resources */,
+				0A1AAFB8D6124756801A5C4A /* FontAwesome.ttf in Resources */,
+				A541B49D9B92480C822C2AE5 /* FontAwesome5_Brands.ttf in Resources */,
+				B269CA803DE64681B68B5000 /* FontAwesome5_Regular.ttf in Resources */,
+				B942E379CB824BB290A6A769 /* FontAwesome5_Solid.ttf in Resources */,
+				B6FC37E9144A49F69FB11BD9 /* Fontisto.ttf in Resources */,
+				AC433BDD6BEC48BAB819344F /* Foundation.ttf in Resources */,
+				E4AC83A32BA244FEAF6CE0F4 /* Ionicons.ttf in Resources */,
+				4EF0255059674B34B4B338F1 /* MaterialCommunityIcons.ttf in Resources */,
+				9CA7C53DD0A7483F9A643490 /* MaterialIcons.ttf in Resources */,
+				19B0B5DC250A0B2500076D38 /* Info-dev.plist in Resources */,
+				C3256B196437452DAF73E88C /* Octicons.ttf in Resources */,
+				182974866F274B63A8D77FC5 /* SimpleLineIcons.ttf in Resources */,
+				B98A38A92632BEF500745947 /* main.jsbundle in Resources */,
+				F9F3AEFD491841D78E3B1635 /* Zocial.ttf in Resources */,
+				8484A2F2264636E6006272D2 /* video_chat_tip_sender.aac in Resources */,
+				A6ECF8DEFF9E4FD08B1280EC /* Impact.ttf in Resources */,
+				8484A2F5264636E6006272D2 /* expressionImage.plist in Resources */,
+				8484A2F3264636E6006272D2 /* QMEmoticon.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\nexport FORCE_BUNDLING=true\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		3F23DA5F557D8868362A61ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework",
+				"${BUILT_PRODUCTS_DIR}/Branch/Branch.framework",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/HappyDNS/HappyDNS.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/LCHToolKit/LCHToolKit.framework",
+				"${BUILT_PRODUCTS_DIR}/LCIMProtocol/LCIMProtocol.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCAsyncStorage/RNCAsyncStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCClipboard/RNCClipboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCMaskedView/RNCMaskedView.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCPicker/RNCPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/RNGestureHandler/RNGestureHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/RNReanimated/RNReanimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
+				"${BUILT_PRODUCTS_DIR}/RNScreens/RNScreens.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSentry/RNSentry.framework",
+				"${BUILT_PRODUCTS_DIR}/RNShare/RNShare.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSpringScrollView/RNSpringScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionKit/TransitionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/WHDebugTool/WHDebugTool.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-branch/RNBranch.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-check-notification-enable/react_native_check_notification_enable.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-fbsdk/react_native_fbsdk.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-image-picker/react_native_image_picker.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-slider/react_native_slider.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-stripe-payments/react_native_stripe_payments.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-webview/react_native_webview.framework",
+				"${BUILT_PRODUCTS_DIR}/shm-app-video/shm_app_video.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BVLinearGradient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Branch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HappyDNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCHToolKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCIMProtocol.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCAsyncStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCClipboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCMaskedView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNGestureHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNReanimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNScreens.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSentry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSpringScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNVectorIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sentry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WHDebugTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNBranch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_check_notification_enable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_fbsdk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_image_picker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_safe_area_context.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_slider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_stripe_payments.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_webview.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/shm_app_video.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B8CAFF1A11943BDBBD813BB /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\n../node_modules/@sentry/cli/bin/sentry-cli upload-dsym\n";
+		};
+		824FF468FEC88B68ECD7467E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyDeal/Pods-LuckyDeal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B90ED9767E984CF0BA3A97DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyDeal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410AF952645432900A47020 /* QMChatNewCardCell.m in Sources */,
+				847757BD264A3484002E22C7 /* LDTools.m in Sources */,
+				8410B0B52645463900A47020 /* QMActivityView.m in Sources */,
+				8410AF9C2645432900A47020 /* QMQuestionCell.m in Sources */,
+				8484A45626466D75006272D2 /* QNUpToken.m in Sources */,
+				8410AF8E2645432900A47020 /* QMQuestionModel.m in Sources */,
+				8410AFB32645432900A47020 /* QMChatShowFileViewController.m in Sources */,
+				8410AFAC2645432900A47020 /* QMChatTitleView.m in Sources */,
+				8484A46726466D75006272D2 /* QNPipeline.m in Sources */,
+				8410AF972645432900A47020 /* QMChatRobotCell.m in Sources */,
+				14AF0F16247E8F50004F85AB /* AppDelegate.swift in Sources */,
+				8484A45F26466D75006272D2 /* QNAsyncRun.m in Sources */,
+				8410AFAE2645432900A47020 /* QMChatEvaluationView.m in Sources */,
+				8484A22226455F88006272D2 /* LDQMLineManager.m in Sources */,
+				8410AFA72645432900A47020 /* QMChatFaceView.m in Sources */,
+				8484A45C26466D75006272D2 /* QNFile.m in Sources */,
+				8410B0C82645463900A47020 /* PieView.m in Sources */,
+				8410B0B22645463900A47020 /* QMAudioRecorder.m in Sources */,
+				8410B0B82645463900A47020 /* QMTapGestureRecognizer.m in Sources */,
+				14AD10942519CBFA000FCBF0 /* ApiManager.swift in Sources */,
+				8410B0C02645463900A47020 /* QMFileTabbarView.m in Sources */,
+				8410AF912645432900A47020 /* QMChatCardCell.m in Sources */,
+				8484A46226466D75006272D2 /* QN_GTM_Base64.m in Sources */,
+				8410B0AF2645463900A47020 /* UIView+Hex.m in Sources */,
+				8410B0C52645463900A47020 /* QMFileManagerController.m in Sources */,
+				14E7555D250A17D2004A9329 /* UpdateManager.swift in Sources */,
+				14AF1530247FB7FE004F85AB /* Report.swift in Sources */,
+				8484A46026466D75006272D2 /* QNALAssetFile.m in Sources */,
+				8410B0BA2645463900A47020 /* QMFileTableCell.m in Sources */,
+				8484A45B26466D75006272D2 /* QNUrlSafeBase64.m in Sources */,
+				8410AFB22645432900A47020 /* QMQuestionViewController.m in Sources */,
+				8410B0C72645463900A47020 /* NSAttributedString+QMEmojiExtension.m in Sources */,
+				8484A45726466D75006272D2 /* QNFormUpload.m in Sources */,
+				8410B0B62645463900A47020 /* QMDateManager.m in Sources */,
+				8477570426491578002E22C7 /* ReactInteraction.m in Sources */,
+				8410AF9B2645432900A47020 /* QMChatBaseCell.m in Sources */,
+				8410B0B02645463900A47020 /* QMLabelText.m in Sources */,
+				14C8C389247BA49200A05112 /* AppModule.m in Sources */,
+				8410AF922645432900A47020 /* QMChatRobotFlowCell.m in Sources */,
+				8410AF932645432900A47020 /* QMChatCommonProblemCell.m in Sources */,
+				8410AFAA2645432900A47020 /* QMChatRobotReplyView.m in Sources */,
+				8410B0BE2645463900A47020 /* QMFileManager.m in Sources */,
+				8410AF962645432900A47020 /* QMChatCellFactory.m in Sources */,
+				8410B0BF2645463900A47020 /* QMFileModel.m in Sources */,
+				8410B0C12645463900A47020 /* QMPickedPhotoViewController.m in Sources */,
+				8410AF9F2645432900A47020 /* QMChatRichTextCell.m in Sources */,
+				8410AFA42645432900A47020 /* SegmentView.m in Sources */,
+				14AF1527247E91DE004F85AB /* LuckyUser.swift in Sources */,
+				8410B0BB2645463900A47020 /* QMFileCollectionCell.m in Sources */,
+				8484A45D26466D75006272D2 /* QNEtag.m in Sources */,
+				8410B0BC2645463900A47020 /* QMVideoTableCell.m in Sources */,
+				8484A46526466D75006272D2 /* QNSessionManager.m in Sources */,
+				84775F68264BB6BB002E22C7 /* LDLaunchLoadingView.m in Sources */,
+				8410B0C62645463900A47020 /* QMPickedAudioViewController.m in Sources */,
+				8484A45326466D74006272D2 /* QNUploadManager.m in Sources */,
+				8484A46926466D75006272D2 /* MLEmojiLabel.m in Sources */,
+				8484A46826466D75006272D2 /* TTTAttributedLabel.m in Sources */,
+				8410B0C22645463900A47020 /* QMPickedVideoViewController.m in Sources */,
+				8410AF992645432900A47020 /* QMChatTextCell.m in Sources */,
+				8410B0BD2645463900A47020 /* QMProfileManager.m in Sources */,
+				8484A45A26466D75006272D2 /* QNCrc32.m in Sources */,
+				8410B0B32645463900A47020 /* QMAudioAnimation.m in Sources */,
+				8410AFB52645432900A47020 /* QMChatGuestBookViewController.m in Sources */,
+				8484A46426466D75006272D2 /* QNResponseInfo.m in Sources */,
+				8410AFA12645432900A47020 /* AnswerView.m in Sources */,
+				8410AFA62645432900A47020 /* TCFaceView.m in Sources */,
+				8484A45826466D75006272D2 /* QNUploadOption.m in Sources */,
+				14AF152D247F8CEF004F85AB /* NotificationManager.swift in Sources */,
+				84B13441263A8A1700841105 /* LDPaypalWebViewController.m in Sources */,
+				8410B0C92645463900A47020 /* QMPushManager.m in Sources */,
+				8410B0C32645463900A47020 /* QMPickedOtherViewController.m in Sources */,
+				8484A45926466D75006272D2 /* QNPHAssetResource.m in Sources */,
+				8410AFA32645432900A47020 /* AnswerMoreView.m in Sources */,
+				8410AFA52645432900A47020 /* QMChatMoreView.m in Sources */,
+				8410AFB62645432900A47020 /* QMChatShowRichTextController.m in Sources */,
+				8484A45E26466D75006272D2 /* QNSystem.m in Sources */,
+				8410B0B72645463900A47020 /* QMRemind.m in Sources */,
+				8484A46626466D75006272D2 /* QNFileRecorder.m in Sources */,
+				8484A46A26466D75006272D2 /* SJVoiceTransform.m in Sources */,
+				8410B0B92645463900A47020 /* QMItemCollectionCell.m in Sources */,
+				8410AF9A2645432900A47020 /* QMChatCallCell.m in Sources */,
+				8410AFAB2645432900A47020 /* QMChatInputView.m in Sources */,
+				14AF152B247F8CC2004F85AB /* AppInfo.swift in Sources */,
+				8410AFAF2645432900A47020 /* QMChatShowImageViewController.m in Sources */,
+				14E7555F250B5470004A9329 /* Constants.swift in Sources */,
+				8410B0B42645463900A47020 /* QMAudioPlayer.m in Sources */,
+				8410AF8F2645432900A47020 /* QMLogistcsInfoModel.m in Sources */,
+				8484A45526466D75006272D2 /* QNResumeUpload.m in Sources */,
+				8410AF9E2645432900A47020 /* QMChatFileCell.m in Sources */,
+				8410AFA22645432900A47020 /* AnswerCell.m in Sources */,
+				8410AF982645432900A47020 /* QMChatVoiceCell.m in Sources */,
+				8410B0CA2645463900A47020 /* QMCustomLayout.m in Sources */,
+				8410B0C42645463900A47020 /* QMPickedDocViewController.m in Sources */,
+				8410AFAD2645432900A47020 /* QMChatAssociationInputView.m in Sources */,
+				8410AFA82645432900A47020 /* QMChatBottomListView.m in Sources */,
+				8410AF942645432900A47020 /* QMLeaveMessageCell.m in Sources */,
+				8410AF902645432900A47020 /* QMChatImageCell.m in Sources */,
+				8484A46326466D75006272D2 /* QNUserAgent.m in Sources */,
+				8410AFB42645432900A47020 /* QMQuestionSubViewController.m in Sources */,
+				8484A46126466D75006272D2 /* QNPHAssetFile.m in Sources */,
+				8410AFA02645432900A47020 /* QMChatFlowView.m in Sources */,
+				8484A45426466D75006272D2 /* QNConfiguration.m in Sources */,
+				8410AF9D2645432900A47020 /* QMChatNoteCell.m in Sources */,
+				8410B0B12645463900A47020 /* UIColor+Hex.m in Sources */,
+				8410AFA92645432900A47020 /* QMRecordIndicatorView.m in Sources */,
+				8410AFB02645432900A47020 /* QMChatRoomViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = LuckyDeal;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8500E67D5336C3DA77A57D /* Pods-LuckyDeal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LuckyDeal/LuckyDeal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/QiMoor",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QMLine",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = "LuckyDeal/Info-dev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QMLine/Voice",
+					"$(PROJECT_DIR)/QMLine/3rdLib/Voice",
+				);
+				MARKETING_VERSION = 2.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luckydeal.bid;
+				PRODUCT_NAME = LuckyDeal;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuckyDeal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208209DCC199C0D75A61116B /* Pods-LuckyDeal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LuckyDeal/LuckyDeal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/QiMoor",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QMLine",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = LuckyDeal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QMLine/Voice",
+					"$(PROJECT_DIR)/QMLine/3rdLib/Voice",
+				);
+				MARKETING_VERSION = 2.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luckydeal.bid;
+				PRODUCT_NAME = LuckyDeal;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuckyDeal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		14AD0E06251499B3000FCBF0 /* dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = dev;
+		};
+		14AD0E07251499B3000FCBF0 /* dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7107F8E5906177A0F76F06 /* Pods-LuckyDeal.dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LuckyDeal/LuckyDeal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/QiMoor",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QMLine",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Branch/Branch.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion/DoubleConversion.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Folly/folly.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON/HandyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/InnoAntiSpamSDK/InnoAntiSpamSDK.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/InnotechIMSDK/InnotechIMSDK.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety/RCTTypeSafety.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNAppleAuthentication/RNAppleAuthentication.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCClipboard/RNCClipboard.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCMaskedView/RNCMaskedView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNGestureHandler/RNGestureHandler.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNGoogleSignin/RNGoogleSignin.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNIap/RNIap.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNReanimated/RNReanimated.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNScreens/RNScreens.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNSentry/RNSentry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNShare/RNShare.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNSpringScrollView/RNSpringScrollView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNVectorIcons/RNVectorIcons.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules/CoreModules.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation/RCTAnimation.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob/RCTBlob.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage/RCTImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking/RCTLinking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork/RCTNetwork.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings/RCTSettings.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText/RCTText.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration/RCTVibration.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/cxxreact.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi/jsi.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor/jsireact.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TransitionKit/TransitionKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Zip/Zip.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-branch/RNBranch.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-check-notification-enable/react_native_check_notification_enable.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-fbsdk/react_native_fbsdk.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-image-picker/react_native_image_picker.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-webview/react_native_webview.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+				);
+				INFOPLIST_FILE = "LuckyDeal/Info-dev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QMLine/Voice",
+					"$(PROJECT_DIR)/QMLine/3rdLib/Voice",
+				);
+				MARKETING_VERSION = 2.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luckydeal.bid;
+				PRODUCT_NAME = LuckyDeal;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuckyDeal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = dev;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LuckyDeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+				14AD0E07251499B3000FCBF0 /* dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LuckyDeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+				14AD0E06251499B3000FCBF0 /* dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

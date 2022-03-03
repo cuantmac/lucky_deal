@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time" />
+
+    <RelativeLayout
+        android:id="@+id/chart_from_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_time"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/chart_to_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/chatting_avatar_iv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/kf_head_default_local" />
+
+            <RelativeLayout
+                android:id="@+id/chatto_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_toLeftOf="@id/chatting_avatar_iv">
+
+                <FrameLayout
+                    android:id="@+id/chat_to_layout_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/ykf_receive_msg_bg">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/file_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="68dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/ykf_chat_file_icon"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ykf_icon_file_default" />
+
+                            <com.m7.imkfsdk.view.CircleProgressView
+                                android:id="@+id/chat_content_pb_progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:scaleType="fitXY"
+                                app:circleCorner="12px"
+                                app:startAngle="270" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_toStartOf="@+id/file_icon"
+                            android:layout_toLeftOf="@+id/file_icon"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/chat_content_tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="xxsdfadsfadsfaadfadsfafdaafdsfaxxx"
+                                android:textColor="@color/color_151515"
+                                android:textSize="16sp" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/chat_content_tv_size"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:textColor="@color/color_999999"
+                                    android:textSize="11sp"
+                                    tools:text="111" />
+
+                                <TextView
+                                    android:id="@+id/chat_content_tv_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/chat_content_tv_size"
+                                    android:text="ss"
+                                    android:textColor="@color/color_999999"
+                                    android:textSize="11sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/chatting_state_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/chatto_content_layout"
+                android:background="@drawable/kf_chat_failure_msgs"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/uploading_pb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/chatto_content_layout"
+                android:indeterminateDrawable="@drawable/progressbar_color" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/ykf_read_unreadtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chart_from_container"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="2dp" />
+</RelativeLayout>

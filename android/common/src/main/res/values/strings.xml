@@ -1,0 +1,18 @@
+<resources>
+    <string name="network_error">Oops, looks like you have lost internet connection</string>
+    <string name="loadview_message">Loading</string>
+    <string name="try_flush">Retry</string>
+    <string name="server_error">Server error</string>
+    <string name="request_error">Request error</string>
+    <string name="check_connection">No connection.</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="connection_timeout">Connection timeout</string>
+    <string name="dns_failed">Dns lookup failed</string>
+
+    <string name="load_message">Loading ...</string>
+    <string name="ad_load_message">Ads loading ...</string>
+    <string name="week_ago"> week ago</string>
+    <string name="day_ago"> day ago</string>
+    <string name="hour_ago"> hour ago</string>
+    <string name="minute_ago"> minute ago</string>
+</resources>

@@ -1,0 +1,10 @@
+{
+    "bundles": [{
+        "version": 75,
+        "min_app_version": 37,
+        "max_app_version": 38,
+        "name": "bundle-android-451.zip",
+        "md5": "dd35e70dc4f25c0106670e7f4726bccd",
+        "percent": 100
+    }]
+}

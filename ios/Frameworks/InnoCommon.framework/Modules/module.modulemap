@@ -1,0 +1,6 @@
+framework module InnoCommon {
+  umbrella header "InnoCommon.h"
+
+  export *
+  module * { export * }
+}

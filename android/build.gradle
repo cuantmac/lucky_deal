@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        versionCode = 56 // 要大于线上metadata.json的值，避免热更老版本
+        versionName = "3.2.1"
+        buildToolsVersion = "29.0.2"
+        minSdkVersion = 21
+        compileSdkVersion = 30
+        targetSdkVersion = 30
+        devBundleCode = 236//热更新版本号，跟随meradata.json 文件中的version 版本变化而变化，每次发布apk 的时候要统一
+        gpBundleCode = 110  //正式包热更新版本号。若是线上gpBundleCode大于等于新上传的api gpBundleCode，则不热更；
+    }
+    repositories {
+        google()
+        jcenter()
+//        maven {
+//            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+//        }
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:3.6.3")
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.1.0'
+
+//        classpath 'com.aliyun.ams:emas-services:1.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven { url 'http://nexus.qutoutiao.net/repository/android/' }
+    }
+}
+
+project.ext {
+    excludeAppGlideModule = true
+}

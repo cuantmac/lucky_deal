@@ -1,0 +1,10 @@
+{
+    "bundles": [{
+        "version": 82,
+        "min_app_version": 37,
+        "max_app_version": 38,
+        "name": "bundle-android-502.zip",
+        "md5": "f3089e9ca1fd54d9ceaf18e2caa9a860",
+        "percent": 100
+    }]
+}

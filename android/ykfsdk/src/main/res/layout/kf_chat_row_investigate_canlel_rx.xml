@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ykf_receive_msg_bg"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="请您对本次服务做出评价"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chatting_tv_to_investigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_order_button_fill"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingTop="4dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp"
+            android:text="立即评价"
+            android:textColor="@color/all_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

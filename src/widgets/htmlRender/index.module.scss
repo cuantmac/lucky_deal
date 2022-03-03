@@ -1,0 +1,29 @@
+.htmlRender {
+  width: 100%;
+  background: white;
+  flex: 1;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p {
+    line-height: 22px;
+    font-size: 14px;
+  }
+  table {
+    width: 100% !important;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-collapse: collapse;
+  }
+}
+
+.detailDescription {
+  background: white;
+  .title {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+  }
+}

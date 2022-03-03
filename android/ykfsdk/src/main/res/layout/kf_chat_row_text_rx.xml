@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time" />
+
+    <RelativeLayout
+        android:id="@+id/chart_from_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/chatting_avatar_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kf_head_default_robot" />
+
+        <TextView
+            android:id="@+id/chatfrom_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/chatting_avatar_iv"
+            android:text="@string/name"
+            android:textColor="@color/all_black"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatfrom_tv_name"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/chatting_avatar_iv"
+            android:background="@drawable/ykf_receive_msg_bg">
+
+            <LinearLayout
+                android:id="@+id/chart_content_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="44dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="10dp"/>
+            <!--有无帮助-->
+            <RelativeLayout
+                android:id="@+id/chat_rl_robot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chart_content_lin"
+                android:layout_marginTop="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/chat_ll_robot_useless"
+                    android:layout_width="70dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/chat_iv_robot_useless"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/chat_tv_robot_useless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/nohelp"
+                        android:textColor="@color/grey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chat_ll_robot_useful"
+                    android:layout_width="70dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_toLeftOf="@id/chat_ll_robot_useless"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/chat_iv_robot_useful"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/chat_tv_robot_useful"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/yeshelp"
+                        android:textColor="@color/robot_blue"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!--最下面，很高兴为您解决了问题-->
+            <RelativeLayout
+                android:id="@+id/chat_rl_robot_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_rl_robot">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/kf_line" />
+
+                <TextView
+                    android:id="@+id/chat_tv_robot_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/thinks_01"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+            <!--带有button的xbot-->
+
+            <LinearLayout
+                android:id="@+id/ll_flow"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:layout_below="@id/chart_content_lin"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingRight="6dp"
+                android:paddingLeft="6dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal" />
+                <!--圆点指示器-->
+
+                <com.m7.imkfsdk.view.PointBottomView
+                    android:id="@+id/point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    indicator:circleInterval="10dp"
+                    indicator:fillColor="?attr/ykf_theme_color_default"
+                    indicator:radius="5dp"
+                    indicator:strokeColor="@color/ykf_point_no" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_below="@+id/ll_flow"
+                android:orientation="vertical"
+                android:id="@+id/ll_flow_multi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layerType="software"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/common_line_draw_dash"
+                    />
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/ykf_color_default"
+                        android:textSize="15sp"
+                        android:text="确定"
+                        android:id="@+id/tv_multi_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:background="@drawable/ykf_bg_flowcount"
+                        android:textColor="@color/ykf_color_default"
+                        android:textSize="13sp"
+                        android:text="0"
+                        android:id="@+id/tv_multi_count"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_chat_withdraw" />
+
+</RelativeLayout>

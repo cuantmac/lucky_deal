@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time"/>
+
+    <RelativeLayout
+        android:id="@+id/chart_from_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/chatting_avatar_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kf_head_default_local" />
+
+        <TextView
+            android:id="@+id/chatfrom_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/chatting_avatar_iv"
+            android:text="@string/name"
+            android:textColor="@color/all_black"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/kf_chat_rich_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatfrom_tv_name"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/chatting_avatar_iv"
+            android:background="@drawable/ykf_receive_msg_bg"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_child_img"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp" />
+
+                <TextView
+                    android:id="@+id/tv_child_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_child_img"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/iv_child_img"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/all_black"
+                    android:textSize="16sp"
+                    tools:text="极品家装北dddddddsfadfdsfadfadfdd" />
+
+
+                <TextView
+                    android:id="@+id/tv_child_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_child_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/iv_child_img"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp"
+                    tools:text="加一行asdafadsfaafad字aaafadadfaakllkjfdfafadfaadfdfa" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_other_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <include
+        android:layout_marginLeft="24dp"
+        layout="@layout/ykf_read_unreadtext"
+        android:layout_marginBottom="4dp"
+        android:layout_alignBottom="@+id/chart_from_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"/>
+    <ImageView
+        android:id="@+id/chatting_state_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="28dp"
+        android:background="@drawable/kf_chat_failure_msgs"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/uploading_pb"
+        android:layout_width="20dp"
+        android:indeterminateDrawable="@drawable/progressbar_color"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="28dp" />
+
+</RelativeLayout>

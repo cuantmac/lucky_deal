@@ -1,0 +1,10 @@
+{
+    "bundles": [{
+        "version": 79,
+        "min_app_version": 37,
+        "max_app_version": 38,
+        "name": "bundle-android-483.zip",
+        "md5": "de58f8e688e870ad6161191076d34096",
+        "percent": 50
+    }]
+}

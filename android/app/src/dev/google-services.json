@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "159269991422",
+    "firebase_url": "https://luckydeal-d903b.firebaseio.com",
+    "project_id": "luckydeal-d903b",
+    "storage_bucket": "luckydeal-d903b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159269991422:android:fe0c7f0de4bc5ac71486af",
+        "android_client_info": {
+          "package_name": "com.luckydeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159269991422-kgacvo903sgg4602hdo5vj75qnmfkce4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luckydeal",
+            "certificate_hash": "55c424b2929a579c68de3237baa807c1037b9ef7"
+          }
+        },
+        {
+          "client_id": "159269991422-tl5lno00hrmp55gccsadgbl9u4ldk2nb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbe5-YnnXYnIPdgNF_j2Xu1BLnlg5Vo7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159269991422-tl5lno00hrmp55gccsadgbl9u4ldk2nb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+{
+  "home_banner": [
+    {
+      "url": "",
+      "route": "SpecialList",
+      "guest": true
+    },
+    {
+      "url": "",
+      "route": "AuctionScreen",
+      "params": {
+        "action": "go_timing_bid"
+      }
+    },
+    {
+      "url": "",
+      "route": "BuyBids",
+      "guest": true
+    },
+    {
+      "url": "",
+      "route": "InviteFriends"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time" />
+
+
+    <LinearLayout
+        android:id="@+id/chart_to_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ykf_receive_msg_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="感谢您对本次服务做出评价"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_investigate_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="?attr/ykf_theme_color_default"
+            android:textSize="15sp"
+            tools:text="请您对本次服务做出评请您对本次服务做出评价请您对本次服务做出评价请您对本次服务做出评价请您对本次服务做出评价请您对本次服务做出评价请您对本次服务做出评价价" />
+    </LinearLayout>
+
+
+</RelativeLayout>

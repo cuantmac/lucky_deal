@@ -1,0 +1,49 @@
+10.29号   2.3.24 版本发布了deeplink ，修改了Android 代码，需要发布apk.
+
+11.04号   2.3.25 版本发布了9.9包邮，未修改android 代码，可以热更.
+11.07号   2.3.26 版本首页改版，发布了apk. 也可以热更.
+11.10号   2.3.27 版本修改了打点，修改了Android 代码，(热更安卓代码修改，解决了热更带来的崩溃问题) 需要发布版本.
+11.12号   基于2.3.26 热更sku 优化.
+11.17号   热更搜索功能，热更版本(2.3.26+); 热更打点(2.3.26+).
+11.20号   热更黑五老虎机功能，
+11.21号   热更黑色惊喜功能，
+11.23号   发布apk(2.6.28) 信用卡RN支付.
+11.25号   热更发布笔笔抽奖(2.6.28).
+11.26号   热更发布UI 优化，bundleCode: 37. bundle_file_name: bundle-android-151.zip
+11.27号   热更发布[1125] 0元得 iPhone 12 优化， bundleCode: 39, bundle_file_name: bundle-android-155.zip
+
+12.01号   热更vip+me优化。
+12.04号   热更vip商品+app首页速度优化+搜索二期    bundleCode: 43, bundle_file_name: bundle-android-128.zip (分支)
+12.07号   推送需求APK 发版本(2.6.29).
+12.10号   热更 Best Selling Items板块 & 未支付订单新增提示信息 & 下单页面及订单详情页优化 bundleCode: 44, bundle_file_name: bundle-android-170.zip
+12.12号   热更首单享会员价下单权益p1 bundleCode: 45, bundle_file_name: bundle-android-172.zip
+12.15号   热更搜索三期 bundleCode: 46, bundle_file_name: bundle-android-175.zip
+12.16号   热更新人优惠券订单流程优化 bundleCode: 47, bundle_file_name: bundle-android-177.zip
+12.18号   热更小优化，客服优化，首页新增类目，bundleCode: 49, bundle_file_name: bundle-android-180.zip////
+          发布APK(2.7.30) 更换logo.
+12.21号   热更发布信用卡支付功能开关，  bundleCode: 50, bundle_file_name: bundle-android-182.zip
+12.23号   热更新发布营销优惠券配置+福袋详情页More to Love bundleCode: 52, bundle_file_name: bundle-android-192.zip
+12.24号   热更新发布公码优惠券 bundleCode: 53, bundle_file_name: bundle-android-195.zip
+12.28号   热更新发布内嵌webview 打开paypal 支付，bundleCode: 54, bundle_file_name: bundle-android-197.zip
+
+2021年------
+01.04号   热更新优惠券二期(折扣券)+修改个人信息 bundleCode: 55, bundle_file_name: bundle-android-203.zip
+01.07号   发布APK 2.8.31, paypal 支付跳转Activity  webView.
+01.14号   发布APK 2.9.32, 购物车+退款。
+01.19号   发布APK 2.10.33 回滚到12.28 号版本，验证元旦后发布版本对首单率降低的影响。
+01.22号   发布APK 2.11.34 购物车2期+[0111]高价值福袋发货策略  [0112] 优化需求 [0112]福袋商品上架素材自动化
+01.27号   热更新 [0118]LD小优化 [0124]悬浮窗配置方案 [0124]其他优化需求（2，3）bundleCode: 61, bundle_file_name: bundle-android-208.zip
+02.08号   热更新 bundleCode: 63, bundle_file_name: bundle-android-222.zip
+02.22号   热更新 免邮免税设置最高减免上限金额 bundleCode: 64, bundle_file_name: bundle-android-373.zip
+02.25号   热更 [0203]LD新用户“1元购全额返运费、税费”需求 bundleCode: 65, bundle_file_name: bundle-android-384.zip
+02.26号   热更 凑单需求， bundleCode: 66, bundle_file_name: bundle-android-393.zip
+03.01号   发布APK, branch 数据上报需求，apk version 2.11.35;
+03.03号   热更3.1 号遗漏凑单功能。bundleCode: 67, bundle_file_name: bundle-android-228.zip
+03.18号   发布2.11.37版本，客服系统接入七陌。
+
+
+05.20号   发布2.11.41版本，接入Asiabill 支付。apk 路径 http://10.104.12.229:8080/job/luckydeal_branch/538/ (后期发布热更新minVersion需设置为41).
+05.24号   热更新 修复2.11.41版本的崩溃，bundleCode: 85, bundle_file_name: bundle-android-359.zip（基于41版本）
+11.08号   发布apk 3.0.46 大版本更新
+
+

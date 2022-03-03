@@ -1,0 +1,10 @@
+{
+    "bundles": [{
+        "version": 74,
+        "min_app_version": 37,
+        "max_app_version": 37,
+        "name": "bundle-android-437.zip",
+        "md5": "9cd293299af7d2798b4fcd58a60deafc",
+        "percent": 100
+    }]
+}

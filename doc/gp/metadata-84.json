@@ -1,0 +1,13 @@
+{
+    "bundles":
+    [
+        {
+            "version":84,
+            "min_app_version":37,
+            "max_app_version":39,
+            "name":"bundle-android-521.zip",
+            "md5":"ea0f80b299ebd6c7d893a635c79c5f47",
+            "percent":100
+        }
+    ]
+}

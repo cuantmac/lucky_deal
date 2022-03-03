@@ -1,0 +1,17 @@
+<resources>
+    <string name="splash_text">Good Stuff, Everyone Can Afford</string>
+    <string name="RNB_GOOGLE_PLAY_LICENSE_KEY">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxiqKEx7vMgG0UCrQYNuDGt4PBEjc8N687zMfvbSr079IvCd2UjU1m2lNFVLBqdk5IAy81xoXf//vGcqFe2smAl08h//UQCBwtm5OyJQqsb3XnvrU3UkI5nDqAfz++4D0IHV9MxlUvlE53oFWSpMRiF3VaTFIp36HLFdBs68DyS7P4KE9oB6WtxWqivpxufN4bZm29VPw0oPEzH7rLNdglzFcM+I/Hvk6KyCnteDu6v2YRUCSEyH5I3Na2PTJ7DB4hlFB+o0J5l6WDHctHuPXJMWsW5SAv4MA4BpM9HofSNQ9Q//InrgjPs4uUWc1KpJPuQkyADFj0aBGAx0TxshKVQIDAQAB</string>
+    <string name="install_facebook_messenger">Please install Messenger first</string>
+    <string name="install_wahsapp">Please install WhatsApp first</string>
+    <string name="Facebook">Facebook</string>
+    <string name="login_Facebook">Login with Facebook</string>
+    <string name="Twiter">Twitter</string>
+    <string name="Messenger">Messenger</string>
+    <string name="WhatsApp">WhatsApp</string>
+    <string name="no_message">No Message…</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="payment_success">Payment Success</string>
+    <string name="payment_fail">Payment Failed</string>
+    <string name="back_ld">Back to Gesleben</string>
+    <string name="payment_notice">Don\'t repeat the payment before the countdown is over</string>
+</resources>

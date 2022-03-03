@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/ykf_chatitem_time" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_time">
+
+        <RelativeLayout
+            android:id="@+id/chart_from_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="48dp">
+
+
+            <ImageView
+                android:id="@+id/chatting_avatar_iv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/kf_head_default_robot" />
+
+            <TextView
+                android:id="@+id/chatfrom_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/chatting_avatar_iv"
+                android:text="@string/name"
+                android:textColor="@color/all_black"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/chatto_content_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/chatting_avatar_iv">
+
+                <TextView
+                    android:id="@+id/chatting_voice_play_anim_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ykf_receive_msg_bg"
+                    android:drawableLeft="@drawable/kf_chatfrom_voice_playing"
+                    android:minHeight="42dp" />
+
+                <com.m7.imkfsdk.view.VoiceAnimImageView
+                    android:id="@+id/chatting_voice_anim"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minHeight="36dp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/chatting_voice_second_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:paddingLeft="34dp"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/chatting_unread_flag"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/chatto_content_layout"
+                android:background="@drawable/chat_unreadcount"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/chatting_content_itv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/chatting_unread_flag" />
+
+
+
+        </RelativeLayout>
+        <!--      语音转文本 UI-->
+        <LinearLayout
+            android:id="@+id/ll_voiceTotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chart_from_container"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="58dp"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/lay_voice_to_text"></include>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_chat_withdraw" />
+</RelativeLayout>

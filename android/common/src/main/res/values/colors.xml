@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--白色-->
+    <color name="white">#ffffff</color>
+
+    <!--splash 背景色-->
+    <color name="splash_bg">#F37C38</color>
+
+    <!--白色-->
+    <color name="black">#000000</color>
+
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+    <!--主要字体颜色-->
+    <!--灰色-->
+    <!--次要字体颜色-->
+    <color name="text_accent">#999999</color>
+    <!--分割线颜色-->
+    <!--用于背景底色-->
+
+
+    <!-- 黑色75%透明度-->
+
+    <!--白色透明度-->
+     <color name = "text_more">#00DEFF</color>
+
+</resources>

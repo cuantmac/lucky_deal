@@ -1,0 +1,10 @@
+{
+    "bundles": [{
+        "version": 93,
+        "min_app_version": 41,
+        "max_app_version": 43,
+        "name": "bundle-android-588.zip",
+        "md5": "a614bfca037da3a634586cfd44542eea",
+        "percent": 100
+    }]
+}

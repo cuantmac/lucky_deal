@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题等字号的大小-->
+
+    <!--标准字体大小-->
+    <dimen name="common_dimen">14sp</dimen>
+
+    <!--提示字体大小-->
+
+    <!--小字体-->
+
+    <!--边距-->
+
+    <!--小边距-->
+
+</resources>
